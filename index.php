@@ -9,6 +9,7 @@
         margin-left: 5px;
         margin-right: 5px;
         min-width: 210px;
+        border-radius: 5px;
     }
     .icono_lol
     {
@@ -39,35 +40,51 @@
     .fondo
     {
         background-color: rgba(20, 41, 46, 0.842);
+        background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
     }
     .center {
   margin: auto;
-  width: 50%;
-  border: 3px solid #F6B352;
+  width: 45%;
   padding: 10px;
+  text-align: center;
 }
 </style>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>CPReplay</title>
-    <div class="row">
-        <h1 class="titulo" style="margin: 20px;">CPReplay</h1>
-        <input class="center" type="text">
-    </div>
+    
+    
   </head>
-  <body class="fondo">   
+  <body class="fondo">  
+  <div class='center'>
+    <h1 class="titulo">CPReplay</h1>
+    </div>
+    <div class='center'>
+        <div>
+        <input style='border-radius: 10px; width: 100%; border: 3px solid #F6B352;' type="text">
+        <a href="https://google.es">XD</a>
+        </div>
+    </div> 
       <main class="container-fluid">
         <div class="row" class=".columna">
-            <div class="col-sm-2 columna">
-                <div class="row" >
-                    <label class="col margen texto">nick</label>
-                    <img class="icono_lol margen" src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/360095343534/Seraphine_Icon_T1.jpg">
-                </div>
-                <div class="texto">123456789012345678901234567890123456</div>
+        <?php
+        include('./conectar.php');
+        $sql = 'SELECT * FROM videos ORDER BY id desc';
+        $do = mysqli_query($link, $sql);
+        while($get = mysqli_fetch_assoc($do))
+        {
+            echo'<div class="col-sm-2 columna">
+            <div class="row" >
+                <label class="col margen texto">'.$get['autor'].'</label>
+                <img class="icono_lol margen" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$get['champ'].'.png">
             </div>
+            <div class="texto">'.$get['titulo'].'</div>
+        </div>'; 
+        }   
+        ?>        
         </div>
       </main>
   </body>
