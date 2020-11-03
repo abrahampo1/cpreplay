@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <title>CPReplay</title>
     <div class="row">
-        <h1 class="titulo" style="margin: 10px;">CPReplay</h1>
+        <h1 class="titulo" style="margin: 20px;">CPReplay</h1>
         <input class="center" type="text">
     </div>
   </head>
