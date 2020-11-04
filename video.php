@@ -29,6 +29,12 @@ if($do = mysqli_query($link, $sql)){}else
         text-shadow: black 2px 2px;
         
     }
+    .center {
+  margin: auto;
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+}
 </style>
 <!DOCTYPE html>
 <html>
