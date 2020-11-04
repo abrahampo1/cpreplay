@@ -62,7 +62,7 @@ if($do = mysqli_query($link, $sql)){}else
     <h1 class="titul">CPReplay</h1>
     </div>
     <div id="wrapper">
-      <div class="d-flex flex-column fondo" id="content-wrapper">
+      <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
           <div class="container-fluid" style="padding: 0px">
             <div
