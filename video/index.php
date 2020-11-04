@@ -36,7 +36,7 @@ if($do = mysqli_query($link, $sql)){}else
       <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
           <div class="container-fluid" style="padding: 0px">
-            <a href="https://cpsoftware.es/CPvideo"><h1 class="text-dark mb-1">CPReplay</h1></a>
+            <a href="https://cpsoftware.es/CPvideo"><h1 class="titulo">CPReplay</h1></a>
             <h2 class="text-dark mb-1" style="margin-left: 10px"><?php echo $titulo; ?></h2>
             <a href="https://euw.op.gg/summoner/userName=<?php echo $autor; ?>"><h3 class="text-dark mb-1" style="margin-left: 20px"><?php echo $autor; ?></h3></a>
             <div

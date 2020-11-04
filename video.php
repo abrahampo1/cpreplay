@@ -54,7 +54,6 @@ if($do = mysqli_query($link, $sql)){}else
 
     <title><?php echo $titulo;?></title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/js/plyr.css" />
   </head>
   
