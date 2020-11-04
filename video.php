@@ -86,14 +86,14 @@ if($do = mysqli_query($link, $sql)){}else
               >
                 <source
                 <?php
-                echo'src="./videos/'.$video.'.mp4"';
+                echo'src="../CPvideo/videos/'.$video.'.mp4"';
                 ?>
                   
                   type="video/webm"
                 />
               </video>
               <br><a class="shadow btn btn-success btn-circle ml-1"<?php
-                echo'href="../videos/'.$video.'.mp4"';
+                echo'href="../CPvideo/videos/'.$video.'.mp4"';
                 ?> role="button" download><i class="fas fa-download text-white"></i></a>
 
               <div
