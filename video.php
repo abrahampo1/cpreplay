@@ -22,14 +22,14 @@ if($do = mysqli_query($link, $sql)){}else
 
 ?>
 <style>
-    .titulo
+    .titul
     {
         font-size: 40px;
         color: #F6B352;
         text-shadow: black 2px 2px;
         
     }
-    .center {
+    .centrar {
   margin: auto;
   width: 45%;
   padding: 10px;
@@ -50,8 +50,8 @@ if($do = mysqli_query($link, $sql)){}else
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/js/plyr.css" />
   </head>
-  <div class='center'>
-    <h1 class="titulo">CPReplay</h1>
+  <div class='centrar'>
+    <h1 class="titul">CPReplay</h1>
     </div>
   <body id="page-top">
     <div id="wrapper">
