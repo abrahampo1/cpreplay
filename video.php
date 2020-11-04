@@ -106,17 +106,7 @@ if($do = mysqli_query($link, $sql)){}else
                 <div class="col">
                   <div class="card shadow border-left-warning py-2">
                     <div class="card-body">
-                      <div class="row align-items-center no-gutters">
-                        <div class="col mr-2">
-                          <div
-                            class="text-uppercase text-warning font-weight-bold text-xs mb-1"
-                          >
-                            <span>Visitas</span>
-                          </div>
-                          <div class="text-dark font-weight-bold h5 mb-0">
-                            <span><?php echo $visitas ?></span>
-                          </div>
-                        </div>
+                      <div class="row align-items-center no-gutters"> 
                         <div class="col-auto">
                           <i class="fas fa-eye fa-2x text-gray-300"></i>
                         </div>
