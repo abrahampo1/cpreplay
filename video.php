@@ -57,6 +57,7 @@ if($do = mysqli_query($link, $sql)){}else
                 height="480"
                 controls=""
                 autoplay=""
+                style="height: 480px; width: 720px";
               >
                 <source
                 <?php
