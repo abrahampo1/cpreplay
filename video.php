@@ -5,10 +5,14 @@ $video = $_GET["v"];
 $sql = "SELECT * FROM videos WHERE id = '$video'";
 $do = mysqli_query($link, $sql);
 $info = mysqli_fetch_assoc($do);
-$titulo = $info["titulo"];
+/*$titulo = $info["titulo"];
 $fecha = $info["fecha"];
 $autor = $info["autor"];
-$visitas = $info["visitas"];
+$visitas = $info["visitas"];*/
+$titulo='test';
+$fecha=2020-20-20;
+$autor='tester';
+$visitas=1;
 $visitas++;
 $sql = "UPDATE `videos` SET `visitas` = '$visitas' WHERE `videos`.`id` = '$video' ";
 if($do = mysqli_query($link, $sql)){}else
@@ -57,7 +61,6 @@ if($do = mysqli_query($link, $sql)){}else
                 height="480"
                 controls=""
                 autoplay=""
-                style="height: 480px; width: 720px";
               >
                 <source
                 <?php
