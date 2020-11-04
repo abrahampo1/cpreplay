@@ -35,8 +35,14 @@ $video = $_GET['v'];
     <h1 class="titulo">CPReplay</h1>
     </div>
 
-<div>
-<div
+    <div id="wrapper">
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+          <div class="container-fluid" style="padding: 0px">
+            <a href="https://cpsoftware.es/CPvideo"><h1 class="text-dark mb-1">CPReplay</h1></a>
+            <h2 class="text-dark mb-1" style="margin-left: 10px"><?php echo $titulo; ?></h2>
+            <a href="https://euw.op.gg/summoner/userName=<?php echo $autor; ?>"><h3 class="text-dark mb-1" style="margin-left: 20px"><?php echo $autor; ?></h3></a>
+            <div
               class="text-center center my-auto copyright"
               style="
                 height: auto;
@@ -66,8 +72,42 @@ $video = $_GET['v'];
                 echo'href="../videos/'.$video.'.mp4"';
                 ?> role="button" download><i class="fas fa-download text-white"></i></a>
 
-</div>
-
+              <div
+                class="row"
+                style="
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  margin-top: 20px;
+                "
+              >
+                <div class="col">
+                  <div class="card shadow border-left-warning py-2">
+                    <div class="card-body">
+                      <div class="row align-items-center no-gutters">
+                        <div class="col mr-2">
+                          <div
+                            class="text-uppercase text-warning font-weight-bold text-xs mb-1"
+                          >
+                            <span>Visitas</span>
+                          </div>
+                          <div class="text-dark font-weight-bold h5 mb-0">
+                            <span><?php echo $visitas ?></span>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <i class="fas fa-eye fa-2x text-gray-300"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </body>
 </html>
 <script src="assets/js/jquery.min.js"></script>
