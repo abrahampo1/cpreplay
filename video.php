@@ -1,44 +1,22 @@
+
 <?php
 include("./conectar.php");
 $video = $_GET["v"];
 $sql = "SELECT * FROM videos WHERE id = '$video'";
 $do = mysqli_query($link, $sql);
 $info = mysqli_fetch_assoc($do);
-//$titulo = $info["titulo"];
-//$fecha = $info["fecha"];
-//$autor = $info["autor"];
-//$visitas = $info["visitas"];
-$titulo = 'ejemplo';
-$fecha = '2020-10-12';
-$autor = 'tester';
-$visitas = 9;
+$titulo = $info["titulo"];
+$fecha = $info["fecha"];
+$autor = $info["autor"];
+$visitas = $info["visitas"];
 $visitas++;
 $sql = "UPDATE `videos` SET `visitas` = '$visitas' WHERE `videos`.`id` = '$video' ";
 if($do = mysqli_query($link, $sql)){}else
 {
   mysqli_error($do);
 }
-?>
 
-<style>
-        .fondo
-    {
-        background-color: rgba(20, 41, 46, 0.842);
-        background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
-    }
-    .titulo
-    {
-        font-size: 40px;
-        color: #F6B352;
-        text-shadow: black 2px 2px;
-    }
-    .center {
-  margin: auto;
-  width: 45%;
-  padding: 10px;
-  text-align: center;
-}
-</style>
+?>
 <!DOCTYPE html>
 <html>
   <head>
