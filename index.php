@@ -8,7 +8,7 @@
         margin-bottom: 20px;
         margin-left: 5px;
         margin-right: 5px;
-        min-width: 220px;
+        min-width: 240px;
         border-radius: 5px;
     }
     .icono_lol 
