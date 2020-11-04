@@ -21,6 +21,15 @@ if($do = mysqli_query($link, $sql)){}else
 }
 
 ?>
+<style>
+    .titulo
+    {
+        font-size: 40px;
+        color: #F6B352;
+        text-shadow: black 2px 2px;
+        
+    }
+</style>
 <!DOCTYPE html>
 <html>
   <head>
