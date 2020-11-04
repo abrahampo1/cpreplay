@@ -74,13 +74,15 @@
         $do = mysqli_query($link, $sql);
         while($get = mysqli_fetch_assoc($do))
         {
-            echo'<a href="./video.php?v='.$get["id"].'"><div class="col-sm-2 columna">
+            echo'<div class="col-sm-2 columna">
+            <a href="./video.php?v='.$get["id"].'">
             <div class="row" >
                 <label class="col margen texto">'.$get['autor'].'</label>
                 <img class="icono_lol margen" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$get['champ'].'.png">
             </div>
             <div class="texto">'.$get['titulo'].'</div>
-        </div></a>'; 
+            </a>
+        </div>'; 
         }   
         ?>        
         </div>
