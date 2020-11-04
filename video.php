@@ -103,17 +103,6 @@ if($do = mysqli_query($link, $sql)){}else
                   margin-top: 20px;
                 "
               >
-                <div class="col">
-                  <div class="card shadow border-left-warning py-2">
-                    <div class="card-body">
-                      <div class="row align-items-center no-gutters"> 
-                        <div class="col-auto">
-                          <i class="fas fa-eye fa-2x text-gray-300"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 
               </div>
             </div>
