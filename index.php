@@ -67,9 +67,9 @@
         <input style='border-radius: 10px; width: 100%; border: 3px solid #F6B352;' type="text">
         <a href="https://google.es">XD</a>
         </div>
-    </div class='center'> 
+    </div> 
       <main class="container-fluid">
-        <div class="row" class=".columna">
+        <div class="row" class=".columna center">
         <?php
         include('./conectar.php');
         $sql = 'SELECT * FROM videos ORDER BY id desc';
