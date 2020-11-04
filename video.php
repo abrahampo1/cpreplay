@@ -21,6 +21,8 @@ if($do = mysqli_query($link, $sql)){}else
 }
 
 ?>
+
+<!DOCTYPE html>
 <style>
     .titul
     {
@@ -36,7 +38,6 @@ if($do = mysqli_query($link, $sql)){}else
   text-align: center;
 }
 </style>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
