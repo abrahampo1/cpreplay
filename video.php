@@ -1,5 +1,5 @@
 <?php
-include("../conectar.php");
+include("./conectar.php");
 $video = $_GET["v"];
 $sql = "SELECT * FROM videos WHERE id = '$video'";
 $do = mysqli_query($link, $sql);
