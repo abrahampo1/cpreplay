@@ -43,7 +43,7 @@ if($do = mysqli_query($link, $sql)){}else
     <link rel="stylesheet" href="assets/js/plyr.css" />
   </head>
 
-  <body id="page-top fondo">
+  <body id="page-top">
     <div id="wrapper">
       <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
