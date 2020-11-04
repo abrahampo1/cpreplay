@@ -21,6 +21,13 @@ if($do = mysqli_query($link, $sql)){}else
 }
 
 ?>
+<style>
+    .fondo
+    {
+        background-color: rgba(20, 41, 46, 0.842);
+        background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
+    }
+</style>
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,7 +43,7 @@ if($do = mysqli_query($link, $sql)){}else
     <link rel="stylesheet" href="assets/js/plyr.css" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top fondo">
     <div id="wrapper">
       <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
