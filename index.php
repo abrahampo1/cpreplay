@@ -59,7 +59,7 @@
   </head>
   <body class="fondo">  
   <div class='center'>
-    <h1 class="titulo">CPReplay</h1>
+    <h1 class="titulo" style="font-family:initial">CPReplay</h1>
     </div>
     <div class='center'>
         <div>
