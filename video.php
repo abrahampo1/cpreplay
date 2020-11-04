@@ -32,7 +32,7 @@ $id = $_GET['v'];
     </div>
 
 <div>
-    <video height="720px" width="480px" src="">
+    <video height="720px" width="480px" src="video.mp4">
 
     </video>
 </div>
