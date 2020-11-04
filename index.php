@@ -6,8 +6,8 @@
         background-color: #383A3F;
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
         min-width: 240px;
         border-radius: 5px;
     }
