@@ -65,7 +65,6 @@
     <div class='center'>
         <div>
         <input style='border-radius: 10px; width: 100%; border: 3px solid #F6B352;' type="text">
-        <a href="https://google.es">XD</a>
         </div>
     </div> 
       <main class="container-fluid">
