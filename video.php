@@ -65,6 +65,7 @@ if($do = mysqli_query($link, $sql)){}else
       <div class="d-flex flex-column fondo" id="content-wrapper">
         <div id="content">
           <div class="container-fluid" style="padding: 0px">
+          hola
             <div
               class="text-center center my-auto copyright"
               style="
