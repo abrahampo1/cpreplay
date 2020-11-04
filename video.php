@@ -57,11 +57,11 @@ if($do = mysqli_query($link, $sql)){}else
     <link rel="stylesheet" href="assets/js/plyr.css" />
   </head>
   
-  <body id="page-top" class="">
-    <div id="wrapper" class="fondo">
+  <body id="page-top" class="fondo">
     <div class='centrar'>
     <h1 class="titul">CPReplay</h1>
     </div>
+    <div id="wrapper">
       <div class="d-flex flex-column fondo" id="content-wrapper">
         <div id="content">
           <div class="container-fluid" style="padding: 0px">
