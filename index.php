@@ -11,7 +11,7 @@
         min-width: 210px;
         border-radius: 5px;
     }
-    .icono_lol
+    .icono_lol 
     {
         width: 40px;
         height: 40px;
@@ -67,7 +67,7 @@
         <input style='border-radius: 10px; width: 100%; border: 3px solid #F6B352;' type="text">
         <a href="https://google.es">XD</a>
         </div>
-    </div> 
+    </div class='center'> 
       <main class="container-fluid">
         <div class="row" class=".columna">
         <?php
