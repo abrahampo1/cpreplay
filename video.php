@@ -58,10 +58,10 @@ if($do = mysqli_query($link, $sql)){}else
   </head>
   
   <body id="page-top" class="">
-  <div class='centrar'>
+    <div id="wrapper" class="fondo">
+    <div class='centrar'>
     <h1 class="titul">CPReplay</h1>
     </div>
-    <div id="wrapper" class="fondo">
       <div class="d-flex flex-column fondo" id="content-wrapper">
         <div id="content">
           <div class="container-fluid" style="padding: 0px">
