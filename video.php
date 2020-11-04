@@ -42,6 +42,7 @@ if($do = mysqli_query($link, $sql)){}else
         background-color: rgba(20, 41, 46, 0.842);
         background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
     }
+    a { text-decoration: none; }
 </style>
 <html>
   <head>
@@ -59,7 +60,7 @@ if($do = mysqli_query($link, $sql)){}else
   
   <body id="page-top" class="fondo">
     <div class='centrar'>
-    <h1 class="titul">CPReplay</h1>
+    <a class="titul" href="replay.cpsoftware.es">CPReplay</a>
     </div>
     <div id="wrapper">
       <div class="d-flex flex-column fondo" id="content-wrapper">
