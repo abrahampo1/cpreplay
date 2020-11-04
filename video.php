@@ -37,6 +37,11 @@ if($do = mysqli_query($link, $sql)){}else
   padding: 10px;
   text-align: center;
 }
+.fondo
+    {
+        background-color: rgba(20, 41, 46, 0.842);
+        background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
+    }
 </style>
 <html>
   <head>
