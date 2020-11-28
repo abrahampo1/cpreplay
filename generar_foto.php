@@ -1,6 +1,6 @@
 <?php
 //where you want your thumbnails to go
-$thumbs_dir = 'uploads/thumbs/';
+$thumbs_dir = 'snapshots/';
 
 //this should be an array of video paths
 $videos = array();
