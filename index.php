@@ -18,7 +18,7 @@ else{
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Light Theme</title>
-<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/video.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container"> 
