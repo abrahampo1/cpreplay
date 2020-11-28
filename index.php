@@ -1,46 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
 
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>CPReplay</title>
-    
-    
-  </head>
-  <body class="fondo">  
-  <div class='center'>
-    <h1 class="titulo" style="font-family:initial">CPReplay</h1>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <img src="images/cpreplay logo.png" width="210" height="90">
+  </header>
+	
+  <!-- Hero Section -->
+	
+  <section class="intro">
+<div class="column">
+      <h3>Username</h3>
+      <img src="images/profile.png" alt="" class="profile"> </div>
+    <div class="column">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
     </div>
-    <div class='center'>
-        <div>
-        <input style='border-radius: 10px; width: 100%; border: 3px solid #F6B352;' type="text">
-        </div>
-    </div> 
-      <main class="container-fluid center">
-        <div class="row" class=".columna">
-        <?php
-        include('./conectar.php');
-        $sql = 'SELECT * FROM videos ORDER BY id desc';
-        $do = mysqli_query($link, $sql);
-        while($get = mysqli_fetch_assoc($do))
-        {
-            echo'<div class="col-sm-2 columna">
-            <a href="./video.php?v='.$get["id"].'">
-            <div class="row" >
-                <label class="col margen texto">'.$get['autor'].'</label>
-                <img class="icono_lol margen" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$get['champ'].'.png">
-            </div>
-            <div class="texto">'.$get['titulo'].'</div>
-            </a>
-        </div>'; 
-        }   
-        ?>        
-        </div>
-      </main>
-  </body>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>TITLE</h4>
+      <p class="tag">HTML, CSS, JS, WordPress</p>
+      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2020 - <strong>CPSOFTWARE</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
 </html>
-
-<script>
-    fitText(document.querySelector("h1"), 0.38);
-</script>
