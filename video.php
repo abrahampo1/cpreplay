@@ -28,7 +28,7 @@ else{
 <body>
 <div class="container"> 
   <header class="header">
-	  <a href="replay.cpsoftware.es">
+	  <a href="https://replay.cpsoftware.es">
 	  <img src="images/cpreplay logo.png" width="210" height="90">
 	  </a>
 	
