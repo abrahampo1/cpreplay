@@ -47,7 +47,7 @@ else{
 	background-color:darkgrey;
 	border-radius: 5px;
 	margin: 20px">
-	  <h3><?php echo $descripcion ?></h3>
+	  <h3 style="margin: 20px;"><?php echo $descripcion ?></h3>
 	</div>
 	
   <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
