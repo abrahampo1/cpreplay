@@ -2,7 +2,7 @@
 /* Body */
 body {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	background-color: #FFFFFF;
+	background-color: #999999;
 	margin: 0;
 }
 /* Container */
@@ -10,7 +10,7 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #FFFFFF;
+	background-color: #666666;
 }
 /* Header */
 header {
