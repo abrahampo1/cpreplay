@@ -24,7 +24,9 @@ header {
 	border-bottom: 1px solid #353635;
 	text-align: center
 }
-
+span {
+color: #B3B3B3;
+}
 .logo {
 	color: #fff;
 	font-weight: bold;
