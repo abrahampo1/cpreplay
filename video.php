@@ -45,7 +45,8 @@ else{
  </div>
     <div style="
 	background-color:darkgrey;
-	border-radius: 5px;">
+	border-radius: 5px;
+	margin: 100px">
 	  <h3><?php echo $descripcion ?></h3>
 	</div>
 	
