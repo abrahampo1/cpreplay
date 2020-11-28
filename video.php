@@ -39,13 +39,15 @@ else{
   align-items: center;
 	margin-left: 1%;
 	margin-right: 1%;
-	background-color:darkgrey;">
+	background-color:darkgrey;
+	border-radius: 5px;">
 	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
 	  <span style="font-size: 50px;  margin-left: 20px"><?php echo $titulo ?></span>
- </div>
-	<div >
+	  <div >
 	  <h3><?php echo $descripcion ?></h3>
 	</div>
+ </div>
+	
   <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
 </div>
 </body>
