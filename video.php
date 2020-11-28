@@ -38,16 +38,14 @@ else{
  <div style="display: flex;
   align-items: center;
 	margin-left: 1%;
-	margin-right: 1%;
-	background-color:darkgrey;
-	border-radius: 5px;">
+	margin-right: 1%;">
 	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
 	  <span style="font-size: 50px;  margin-left: 20px"><?php echo $titulo ?></span>
 	  
  </div>
     <div style="
 	background-color:darkgrey;
-	border-radius: 5px;">>
+	border-radius: 5px;">
 	  <h3><?php echo $descripcion ?></h3>
 	</div>
 	
