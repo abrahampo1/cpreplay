@@ -31,10 +31,10 @@ else{
     
     while($video = mysqli_fetch_assoc($videos))
     {
-      echo'<div class="thumbnail"> <a href="#"><video src="https://replay.cpsoftware.es/video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video>
+      echo'<div class="thumbnail"> <a href="#"><video src="https://replay.cpsoftware.es/video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video></a>
       <h4>'.$video["titulo"].'</h4>
       <p class="tag">'.$video["autor"].'</p>
-      <p class="text_column">'.$video["descripcion"].'</p></a>
+      <p class="text_column">'.$video["descripcion"].'</p>
     </div>';
     }
     
