@@ -1,123 +1,46 @@
-
 <?php
 include("./conectar.php");
-$video = $_GET["v"];
-$sql = "SELECT * FROM videos WHERE id = '$video'";
-$do = mysqli_query($link, $sql);
-$info = mysqli_fetch_assoc($do);
-/*$titulo = $info["titulo"];
-$fecha = $info["fecha"];
-$autor = $info["autor"];
-$visitas = $info["visitas"];*/
-$titulo='test';
-$fecha=2020-20-20;
-$autor='tester';
-$visitas=1;
-$visitas++;
-$sql = "UPDATE `videos` SET `visitas` = '$visitas' WHERE `videos`.`id` = '$video' ";
-if($do = mysqli_query($link, $sql)){}else
+$sql = "SELECT * FROM videos";
+if($videos = mysqli_query($link, $sql))
 {
-  mysqli_error($do);
 }
+else{
+  //hacer cosas de error
 
+}
 ?>
 
-<!DOCTYPE html>
-<style>
-    .titul
-    {
-        font-size: 40px;
-        color: #F6B352;
-        text-shadow: black 2px 2px;
-        
-    }
-    .centrar {
-  margin: auto;
-  width: 45%;
-  padding: 10px;
-  text-align: center;
-}
-.fondo
-    {
-        background-color: rgba(20, 41, 46, 0.842);
-        background-image: url('https://lol-stats.net/uploads/X0geMjIXBEZOVO5U7CvrqJW3shfN1NaI57cmgyxZ.jpeg');
-    }
-    a { text-decoration: none; }
-</style>
+
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-
-    <title><?php echo $titulo;?></title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="assets/js/plyr.css" />
-  </head>
-  <body id="page-top" class="fondo">
-    <div class='centrar'>
-    <a class="titul" href="https://replay.cpsoftware.es" style="font-family:initial">CPReplay</a>
-    </div>
-    <div id="wrapper">
-      <div class="d-flex flex-column fondo" id="content-wrapper">
-        <div id="content">
-          <div class="container-fluid" style="padding: 0px">
-          hola
-            <div
-              class="text-center center my-auto copyright"
-              style="
-                height: auto;
-                margin-left: 1px;
-                margin-top: 1px;
-                margin-right: 1px;
-                padding-top: 30px;
-              "
-            >
-            <video
-                class="shadow"
-                id="player"
-                width="720"
-                height="480"
-                controls=""
-                autoplay=""
-              >
-                <source
-                <?php
-                echo'src="./videos/'.$video.'.mp4"';
-                ?>
-                  
-                  type="video/webm"
-                />
-              </video>
-              <br><a class="shadow btn btn-success btn-circle ml-1"<?php
-                echo'href="./videos/'.$video.'.mp4"';
-                ?> role="button" download><i class="fas fa-download text-white"></i></a>
-
-              <div
-                class="row"
-                style="
-                  margin-left: 20px;
-                  margin-right: 20px;
-                  margin-top: 20px;
-                "
-              >
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
-    <script>
-      const player = new Plyr("#player");
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container"> 
+  <header class="header">
+    <img src="images/cpreplay logo.png" width="210" height="90">
+	
+  </header>
+  <div class="gallery center">
+	  <video class="thumbnail" src="video/test.mp4" controls></video>
+	  <br>
+  </div>
+ <div style="display: flex;
+  align-items: center;
+	margin-left: 1%;
+	margin-right: 1%;">
+	<img style="vertical-align; border-radius: 100%" src="images/placeholder.jpg" width="80px" height="80px">
+	  <span style="font-size: 50px;  margin-left: 20px">TItulo</span>
+ </div>
+	<div >
+	  <h3>descripcion</h3>
+	</div>
+  <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
+</div>
+</body>
 </html>
