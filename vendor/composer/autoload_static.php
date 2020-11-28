@@ -18,6 +18,7 @@ class ComposerStaticInit4d4e8f7980f50179485efacd9bb3d0c6
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Filesystem\\' => 29,
+            'ScreenShotr\\' => 12,
         ),
         'P' => 
         array (
@@ -45,6 +46,10 @@ class ComposerStaticInit4d4e8f7980f50179485efacd9bb3d0c6
         'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'ScreenShotr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aequasi/screenshotr/src',
         ),
         'Psr\\Log\\' => 
         array (

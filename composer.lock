@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "842db949b3b84dade3607e7153f3ad62",
+    "content-hash": "5b8880122fc736d5afa7f41ab3fc4891",
     "packages": [
+        {
+            "name": "aequasi/screenshotr",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aequasi/screenshotr.git",
+                "reference": "ad114398e476c420c94c86392839dfc26c31adfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aequasi/screenshotr/zipball/ad114398e476c420c94c86392839dfc26c31adfb",
+                "reference": "ad114398e476c420c94c86392839dfc26c31adfb",
+                "shasum": ""
+            },
+            "require": {
+                "php-ffmpeg/php-ffmpeg": "~0.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ScreenShotr\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com"
+                }
+            ],
+            "description": "Creates screen shots from a video",
+            "time": "2014-08-14T23:09:54+00:00"
+        },
         {
             "name": "alchemy/binary-driver",
             "version": "v5.2.0",
