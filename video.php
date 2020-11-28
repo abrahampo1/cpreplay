@@ -1,8 +1,13 @@
 <?php
 include("./conectar.php");
-$sql = "SELECT * FROM videos";
+$video = $_GET["v"];
+$sql = "SELECT * FROM videos WHERE video = $video";
 if($videos = mysqli_query($link, $sql))
 {
+	$video = mysqli_fetch_assoc($videos);
+	$titulo = $video["titulo"];
+	$descripcion = $video["descripcion"];
+	$champion = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/".$video["campeon"].".png";
 }
 else{
   //hacer cosas de error
@@ -34,11 +39,11 @@ else{
   align-items: center;
 	margin-left: 1%;
 	margin-right: 1%;">
-	<img style="vertical-align; border-radius: 100%" src="images/placeholder.jpg" width="80px" height="80px">
-	  <span style="font-size: 50px;  margin-left: 20px">TItulo</span>
+	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
+	  <span style="font-size: 50px;  margin-left: 20px"><?php echo $titulo ?></span>
  </div>
 	<div >
-	  <h3>descripcion</h3>
+	  <h3><?php echo $descripcion ?></h3>
 	</div>
   <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
 </div>
