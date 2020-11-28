@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Light Theme</title>
 <link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 <!-- Main Container -->
@@ -20,7 +19,7 @@
     <form>
 		
       <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="exampleInputEmail1">mail</label>
             <input type="email" class="form-control" id="exampleInputEmail1" style="width:100%" placeholder="Enter email">
             <small id="emailHelp1" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
           <div class="form-group">
