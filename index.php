@@ -31,7 +31,7 @@ else{
     
     while($video = mysqli_fetch_assoc($videos))
     {
-      echo'<div class="thumbnail"> <a href="#"><video src="video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video></a>
+      echo'<div class="thumbnail"> <a href="#"></a><video src="video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video>
       <h4>'.$video["titulo"].'</h4>
       <p class="tag">'.$video["autor"].'</p>
       <p class="text_column">'.$video["descripcion"].'</p>
