@@ -38,7 +38,8 @@ else{
  <div style="display: flex;
   align-items: center;
 	margin-left: 1%;
-	margin-right: 1%;">
+	margin-right: 1%;
+	background-color:darkgrey;">
 	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
 	  <span style="font-size: 50px;  margin-left: 20px"><?php echo $titulo ?></span>
  </div>
