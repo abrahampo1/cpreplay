@@ -32,7 +32,7 @@ else{
 	
   </header>
   <div class="gallery center">
-	  <video class="thumbnail" src="video/test.mp4" controls></video>
+	  <video class="thumbnail" src="video/test.mp4" autoplay controls></video>
 	  <br>
   </div>
  <div style="display: flex;
