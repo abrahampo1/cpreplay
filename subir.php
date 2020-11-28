@@ -59,7 +59,7 @@
   <form id="form1" enctype="multipart/form-data" method="post" action="subir_backend.php">
     <div class="row">
       <label for="fileToUpload">Select a File to Upload</label><br />
-      <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
+      <input type="file" name="fichero_usuario" id="fileToUpload" onchange="fileSelected();"/>
     </div>
     <div id="fileName"></div>
     <div id="fileSize"></div>
