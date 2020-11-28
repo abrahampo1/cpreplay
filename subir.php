@@ -3,6 +3,7 @@
     <div class="file-upload-wrapper" data-text="Select your file!">
       <input name="fichero_usuario" type="file" class="file-upload-field" value="">
     </div>
+    <button type="submit">Enviar</button>
   </form>
 </div>
 
