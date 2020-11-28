@@ -3,11 +3,10 @@ include("./conectar.php");
 $sql = "SELECT * FROM videos";
 if($videos = mysqli_query($link, $sql))
 {
-echo "gg wp";
 }
 else{
   //hacer cosas de error
-  echo "tu puta madre con las confianzas";
+
 }
 ?>
 
@@ -33,9 +32,9 @@ else{
     while($video = mysqli_fetch_assoc($videos))
     {
       echo'<div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">HTML, CSS, JS, WordPress</p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h4>'.$video["titulo"].'</h4>
+      <p class="tag">'.$video["autor"].'</p>
+      <p class="text_column">'.$video["descripcion"].'</p>
     </div>';
     }
     
