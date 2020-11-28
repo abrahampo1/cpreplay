@@ -2,11 +2,11 @@
 require 'vendor/autoload.php';
 
 $ffmpeg = FFMpeg\FFMpeg::create(array(
-    'ffmpeg.binaries'  => '/snap/bin/ffmpeg',
-    'ffprobe.binaries' => '/snap/bin/ffmpeg.ffprobe',
+    'ffmpeg.binaries'  => '/snap/bin/',
+    'ffprobe.binaries' => '/snap/bin/',
     'timeout'          => 3600, // The timeout for the underlying process
     'ffmpeg.threads'   => 6,   // The number of threads that FFMpeg should use
-), $logger);
+));
 $video = $ffmpeg->open('video/test.mp4');
 $video
     ->filters()
