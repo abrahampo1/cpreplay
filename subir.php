@@ -14,6 +14,7 @@
   <option data-img-src="images/icons/12.png" data-img-alt="Page 12" data-img-class="last" value="12"> Page 12 </option>
 </select>
 <script src="js/image-picker.js"></script>
+<script src="js/image-picker.min.js"></script>
 <script>
 $("select").imagepicker()
 
