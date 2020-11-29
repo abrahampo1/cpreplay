@@ -35,9 +35,7 @@ $datoslol = json_decode($jsonraw , true);
 <?php
 foreach($datoslol as $key => $champ)
 {
-  echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$champ["id"].'.png);
-  width:45px;
-  height:45px;" >'.$champ["name"].'</option>';
+  echo '<option value="'.$champ["id"].'" >'.$champ["name"].'</option>';
 }
 
 ?>
