@@ -184,7 +184,8 @@
 
   </style>
 <?php
-$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json" , true);
+$jsonraw = file_get_contents("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
+$datoslol = json_decode($jsonraw , true);
 print_r($datoslol);
 ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
