@@ -10,7 +10,7 @@ function generateRandomString($length = 8) {
     }
     return $randomString;
 }
-$titulo = $_POST["titulo"];
+$titulo = $_POST['titulo'];
 $desc = $_POST["desc"];
 $champ = $_POST["champ"];
 $nombre_random = generateRandomString();
