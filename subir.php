@@ -1,22 +1,331 @@
-<link href="js/image-picker.css" rel="stylesheet" type="text/css">
-<select class="image-picker show-html">
-  <option data-img-src="images/icons/01.png" data-img-class="first" data-img-alt="Page 1" value="1">  Page 1  </option>
-  <option data-img-src="images/icons/02.png" data-img-alt="Page 2" value="2">  Page 2  </option>
-  <option data-img-src="images/icons/03.png" data-img-alt="Page 3" value="3">  Page 3  </option>
-  <option data-img-src="images/icons/04.png" data-img-alt="Page 4" value="4">  Page 4  </option>
-  <option data-img-src="images/icons/05.png" data-img-alt="Page 5" value="5">  Page 5  </option>
-  <option data-img-src="images/icons/06.png" data-img-alt="Page 6" value="6">  Page 6  </option>
-  <option data-img-src="images/icons/07.png" data-img-alt="Page 7" value="7">  Page 7  </option>
-  <option data-img-src="images/icons/08.png" data-img-alt="Page 8" value="8">  Page 8  </option>
-  <option data-img-src="images/icons/09.png" data-img-alt="Page 9" value="9">  Page 9  </option>
-  <option data-img-src="images/icons/10.png" data-img-alt="Page 10" value="10"> Page 10 </option>
-  <option data-img-src="images/icons/11.png" data-img-alt="Page 11" value="11"> Page 11 </option>
-  <option data-img-src="images/icons/12.png" data-img-alt="Page 12" data-img-class="last" value="12"> Page 12 </option>
-</select>
-<script src="jquery-3.5.1.min.js"></script>
-<script src="js/image-picker.js"></script>
-<script src="js/image-picker.min.js"></script>
-<script>
-$("select").imagepicker()
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Bootstrap-select with images </title>
 
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-select.css">
+
+  <style>
+		body {
+		  padding-top: 70px;
+		  
+		}
+
+
+	.pkr {
+		background-image:url(cur/pk.png);
+		width:45px;
+		height:23px;
+		}
+		
+	.gbp {
+		background-image:url(cur/uk.png);
+		width:45px;
+		height:23px;
+		}
+
+	.usd {
+		background-image:url(cur/mus.png);
+		width:45px;
+		height:23px;
+		}
+
+	.euro {
+		background-image:url(cur/eu.png);
+		width:45px;
+		height:23px;
+		}
+
+	.aud {
+		background-image:url(cur/aus.png);
+		width:45px;
+		height:23px;
+		}
+	.afg {
+		background-image:url(cur/afg.png);
+		width:45px;
+		height:23px;
+		}
+
+		
+	
+	.bootstrap-select > .dropdown-toggle {
+			color:#fff;
+			border-radius: 0px;
+			font-size: 2em;
+			background: url(dropdown.png) no-repeat right #243746;
+			border: 1px solid #192535;	
+			z-index:10;
+			padding: 25px 5px;
+		}
+
+	button.btn.dropdown-toggle.btn-default {
+			background-color: #243746;
+		}
+		
+		
+	.bootstrap-select.btn-group .filter-option {
+			background: url(dropdown.png) no-repeat right #243746;
+			color:#fff;
+			
+		}
+		
+	.bootstrap-select > .dropdown-menu {
+			background-color: #243746;
+			color:#fff !important;
+			border-radius: 0px;
+		}
+
+
+	.dropdown-menu>li>a {
+			background-color: #243746;
+			color:#fff;
+		}
+	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+			background-color: #243746;
+			color:#fff;
+			text-decoration: none;
+		}
+
+
+	.btn .dropdown-toggle .btn-default {
+		background-color: #243746;
+			color:#fff;
+			text-decoration: none;
+		}
+
+		
+
+
+
+
+.conv-wrap {
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+}
+.conv-cont {
+	padding: 10px;
+	float: left;
+	width: 100%;
+	border: 1px solid #afafaf;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 6px -1px #919191;
+	-webkit-box-shadow: 0 0 6px -1px #919191;
+	box-shadow: 0 0 6px -1px #919191;
+}
+
+.conv-cont .cov-frm {
+	float: left;
+	width: 100%;
+	}
+
+.conv-cont .cov-frm .selectpicker {
+	font-size: 18px !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	margin: 0px;
+	padding: 23px;
+	float: left;
+	width: 100%;
+	outline: none !important;
+}
+
+
+
+.conv-cont .cov-frm .cov-frm-label {
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding: 5px;
+}
+.conv-cont .cov-frm .cov-frm-labeli {
+	font-size: 14px;
+	color: #a9a9a9;
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	background-color: #FFF;
+}
+
+.cov-inp-bx div.col-md-8 , .cov-inp-bx div.col-md-4   {
+    padding: 0px;
+    margin: 0px;
+}
+
+.conv-cont .cov-frm .cov-inp-bx {
+	padding: 0px;
+	float: left;
+	width: 100%;
+	border: 1px solid #c2c2c2;
+	border-radius: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.conv-cont .cov-frm .cov-frm-input {
+	font-size: 24px;
+	font-weight: bold;
+	color: #009cff;
+	text-decoration: none;
+	margin: 0px;
+	padding: 9px;
+	float: left;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+.conv-cont .cov-frm .cov-frm-sbtm {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #243746;
+	text-align: center;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.conv-cont .cov-frm .cov-frm-sbtm:hover {
+	background: #980000;
+}
+.cov-spni {
+	font-size: 13px;
+	font-weight: normal;
+	color: #424242;
+	text-decoration: none;
+	line-height:50px;
+}
+.cov-spnii {
+	color: #333;
+}
+
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Responsive Bootstrap-select with images - Aslam Parvaiz (aslamswt@gmail.com)</a>
+	  <a href="https://silviomoreto.github.io/bootstrap-select/">Based on - https://silviomoreto.github.io/bootstrap-select/</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-6 testing">
+
+
+
+
+
+
+<div class="conv-wrap">
+	<div class="conv-cont al-left">
+		<form action="#" method="post" name="frm" class="cov-frm">
+			<!-- <label class="cov-frm-label">Sending Amount</label> -->
+			<div class="cov-inp-bx">
+				<div class="col-md-8">
+					<label class="cov-frm-labeli">Sending Amount</label>
+					<input class="cov-frm-input" type="text" value="100.00">
+				</div>
+				<div class="col-md-4">
+					<select class="selectpicker">
+						<option value="pkr" data-icon="pkr" >PKR</option>
+						<option value="uk" data-icon="gbp" >GBP</option>
+						<option value="usd" data-icon="usd" >USD</option>
+						<option value="eu" data-icon="euro" >EURO</option>
+						<option value="aud" data-icon="aud" >AUD</option>
+						<option value="afg" data-icon="afg" >AFG</option>
+						</select>
+				</div>
+			</div>
+
+			<!--  <label class="cov-frm-label">Receving Amount</label> -->
+			<div class="cov-inp-bx">
+				<div class="col-md-8">
+					<label class="cov-frm-labeli">Receving Amount</label>
+					<input class="cov-frm-input" name="" type="text" value="100.00">
+				</div>
+				<div class="col-md-4">
+					<select class="selectpicker" style="width:100%;">
+						<option value="uk" data-icon="gbp" >GBP</option>
+						<option value="pkr" data-icon="pkr" >PKR</option>
+						
+						<option value="usd" data-icon="usd" >USD</option>
+						<option value="eu" data-icon="euro" >EURO</option>
+						<option value="aud" data-icon="aud" >AUD</option>
+						<option value="afg" data-icon="afg" >AFG</option>
+                                          
+					</select>
+				</div>
+			</div>
+
+			</form>
+
+		</div>
+	</div>
+
+
+
+
+
+</div>
+
+<div class="col-md-6 select-box" >
+
+<p> I tried several jquery based custom select with images, but none worked in responsive layouts. Finally i came accross Bootstrap-Select. After some modifications i was able to produce this code.</p>
+<p>thanks </p>
+
+
+</div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
 </script>
+
+</body>
+</html>
