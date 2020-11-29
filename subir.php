@@ -27,7 +27,7 @@ $datoslol = json_decode($jsonraw , true);
 		   <label>Vídeo</label>
 	 <input type="file" id="file1" required name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
 		<label>Titulo</label>
-      <input type="text" required class="usuario form-control" name="titulo" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
+      <input type="text" required class="usuario form-control" name="titulo" id="titulo" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
 		   <label>Descripción</label>
       <textarea required class="pass form-control" type="text" name="desc" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3" ></textarea>
 		   <label>Champion</label>
