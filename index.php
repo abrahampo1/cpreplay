@@ -19,7 +19,7 @@ else{
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Light Theme</title>
+<title>CPReplay</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -34,6 +34,10 @@ else{
 	  {
 		  echo'<form action="login.php">
 	<button type="submit" class="btn"><i class="fa fa-user"></i> Log In</button>
+	</form>';
+	  }else{
+		  echo'<form action="subir.php">
+	<button type="submit" class="btn"><i class="fa fa-upload"></i>Subir Video</button>
 	</form>';
 	  }
 	  
