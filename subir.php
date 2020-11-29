@@ -217,7 +217,7 @@ $datoslol = json_decode($jsonraw , true);
           <?php
 while($champ = $datoslol)
 {
-  echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$champ["id"].'.png);
+  echo '<option value="'.$champ["id"].'");
   width:45px;
   height:45px;" >'.$champ["name"].'</option>';
 }
