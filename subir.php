@@ -214,9 +214,10 @@
           <?php
 $datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
 while($champ = $datoslol)
-echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons//'.$champ["id"].'.png);
+echo"hey";
+echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$champ["id"].'.png);
 width:45px;
-height:23px;" >'.$cahmp["name"].'</option>';
+height:45px;" >'.$cahmp["name"].'</option>';
 ?>
 						
 						</select>
