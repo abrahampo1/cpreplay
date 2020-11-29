@@ -1,3 +1,4 @@
+<link href="js/image-picker.css" rel="stylesheet" type="text/css">
 <select class="image-picker show-html">
   <option data-img-src="images/icons/01.png" data-img-class="first" data-img-alt="Page 1" value="1">  Page 1  </option>
   <option data-img-src="images/icons/02.png" data-img-alt="Page 2" value="2">  Page 2  </option>
