@@ -39,8 +39,8 @@ $datoslol = json_decode($jsonraw);
 				<div class="col-md-4">
 					<select>
           <?php
-while($champ = $datoslol)
-{
+
+foreach ($datoslol as $key => $champ) {
   echo '<option value="'.$champ["id"].'")" >'.$champ["name"].'</option>';
 }
 
