@@ -27,11 +27,11 @@ $datoslol = json_decode($jsonraw , true);
 		   <label>Vídeo</label>
 	 <input type="file" id="file1" required name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
 		<label>Titulo</label>
-      <input type="text" required class="usuario form-control" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
+      <input type="text" required class="usuario form-control" name="titulo" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
 		   <label>Descripción</label>
-      <textarea required class="pass form-control" type="text" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3" ></textarea>
+      <textarea required class="pass form-control" type="text" name="desc" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3" ></textarea>
 		   <label>Champion</label>
-      <select required class="un js-example-basic-single form-control" align="center" id="id_label_single" onchange="ponerimagen()" style="margin-bottom: 10px">
+      <select required class="un js-example-basic-single form-control" name="champ" align="center" id="id_label_single" onchange="ponerimagen()" style="margin-bottom: 10px">
       <?php
       foreach($datoslol as $key => $champ)
       {

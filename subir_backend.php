@@ -10,7 +10,9 @@ function generateRandomString($length = 8) {
     }
     return $randomString;
 }
-
+$titulo = $_POST["titulo"];
+$desc = $_POST["desc"];
+$champ = $_POST["champ"];
 $nombre_random = generateRandomString();
 include("conectar.php");
 
@@ -20,7 +22,7 @@ $fichero_subido = $dir_subida . $nombre_random . ".mp4";
 echo '<pre>';
 if (move_uploaded_file($_FILES['file1']['tmp_name'], $fichero_subido)) {
     echo "El fichero es válido y se subió con éxito.\n";
-    $sql = "INSERT INTO `videos` (`id`, `video`, `titulo`, `descripcion`, `campeon`, `autor`, `likes`, `visitas`) VALUES (NULL, '$nombre_random', 'titulo', 'descripcion xd', '12', 'Abrahampo1', '0', '0')";
+    $sql = "INSERT INTO `videos` (`id`, `video`, `titulo`, `descripcion`, `campeon`, `autor`, `likes`, `visitas`) VALUES (NULL, '$nombre_random', '$titulo', '$desc', '$champ', 'Abrahampo1', '0', '0')";
     if($do = mysqli_query($link, $sql))
     {
         echo 'Base de datos correcta';
