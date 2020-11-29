@@ -7,10 +7,6 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/login.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/font-awesome.min.css">
 <?php
 $jsonraw = file_get_contents("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
 $datoslol = json_decode($jsonraw , true);
@@ -36,7 +32,7 @@ $datoslol = json_decode($jsonraw , true);
       }
 
       ?>
-      </select><br>
+      </select><br><br>
 
       <button type="submit" class="submit" align="center">Subelo!</button>  
                 
