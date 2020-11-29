@@ -26,7 +26,8 @@ if (move_uploaded_file($_FILES['fichero_usuario']['tmp_name'], $fichero_subido))
         echo 'Base de datos correcta';
     }else
     {
-        echo 'Error en la base de datos';
+        echo mysqli_error($link);
+        echo 'Error en la base de datos <br>';
     }
 } else {
     echo "¡Posible ataque de subida de ficheros!\n";
