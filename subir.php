@@ -15,6 +15,7 @@
 </select>
 <script src="js/image-picker.js"></script>
 <script src="js/image-picker.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
 <script>
 $("select").imagepicker()
 
