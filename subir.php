@@ -34,7 +34,7 @@ $datoslol = json_decode($jsonraw , true);
 			<!-- <label class="cov-frm-label">Sending Amount</label> -->
 			<div class="cov-inp-bx">
 				<div class="col-md-4">
-					<select class="js-example-basic-single js-states form-control" id="id_label_single" onchange="ponerimagen()">
+					<select class="js-example-basic-single" id="id_label_single" onchange="ponerimagen()">
           <?php
 foreach($datoslol as $key => $champ)
 {
@@ -63,6 +63,9 @@ foreach($datoslol as $key => $champ)
 </div>
 
 <script>
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 function ponerimagen()
 {
   var seleccion = document.getElementById("id_label_single");
