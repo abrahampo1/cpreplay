@@ -15,13 +15,13 @@
         window.onload = function(){
 
             iconSelect = new IconSelect("my-icon-select", 
-                {'selectedIconWidth':23,
-                'selectedIconHeight':23,
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
                 'selectedBoxPadding':1,
                 'iconsWidth':48,
                 'iconsHeight':48,
                 'boxIconSpace':1,
-                'vectoralIconNumber':5,
+                'vectoralIconNumber':2,
                 'horizontalIconNumber':6});
 
             var icons = [];
