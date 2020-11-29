@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="css/subir-archivo.css" rel="stylesheet" />
 <?php
 $jsonraw = file_get_contents("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
 $datoslol = json_decode($jsonraw , true);
@@ -20,11 +21,15 @@ $datoslol = json_decode($jsonraw , true);
 </head>
 <body>
   <div class="main">
-    <p class="sign" align="center">Log in</p>
-    <form class="form1">
-      <input class="un " type="text" align="center" placeholder="Usuario">
-      <input class="pass" type="password" align="center" placeholder="Contraseña">
-      <select class="un js-example-basic-single" align="center" id="id_label_single" onchange="ponerimagen()" style="margin: 0 auto">
+    <p>&nbsp;</p>
+	  <div class="holder_form form-group">
+	   <form>
+		<label>Titulo</label>
+      <input type="text" class="usuario form-control" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
+		   <label>Descripción</label>
+      <textarea class="pass form-control" type="text" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3"></textarea>
+		   <label>Champion</label>
+      <select class="un js-example-basic-single form-control" align="center" id="id_label_single" onchange="ponerimagen()" style="margin-bottom: 10px">
       <?php
       foreach($datoslol as $key => $champ)
       {
@@ -32,14 +37,17 @@ $datoslol = json_decode($jsonraw , true);
       }
 
       ?>
-      </select><br><br>
+      </select>
+		   
+<img id="imagen" class="imagen" width="40" height="40" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/-1.png" style="margin-top: 10px;" alt=""><br><br>
 
-      <button type="submit" class="submit" align="center">Subelo!</button>  
+      <button type="submit" class="submit form-control" align="center">Subelo!</button>  
                 
+	  </div>
+   
     </div>
 
-<img id="imagen" src="" alt="">
-
+</form>
 <script>
   $(document).ready(function() {
     $('.js-example-basic-single').select2();

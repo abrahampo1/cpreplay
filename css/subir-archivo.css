@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.formulario {
+	margin: 0 auto;
+}
+body{
+	background-color: dimgray;
+}
+.holder_form{
+	background-color: whitesmoke;
+	border-radius: 5%;
+	height: 390px;
+	width: 390px;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+.imagen
+{
+	border-radius: 100%;
+}
+.usuario
+{
+	margin-bottom: 10px;
+}
+textarea {
+   resize: none;
+}
