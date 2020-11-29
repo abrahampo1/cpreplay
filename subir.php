@@ -28,7 +28,7 @@ $datoslol = json_decode($jsonraw , true);
     <form class="form1">
       <input class="un " type="text" align="center" placeholder="Usuario">
       <input class="pass" type="password" align="center" placeholder="Contraseña">
-      <select class="js-example-basic-single" align="center" id="id_label_single" onchange="ponerimagen()">
+      <select class="un js-example-basic-single" align="center" id="id_label_single" onchange="ponerimagen()" style="margin: 0 auto">
       <?php
       foreach($datoslol as $key => $champ)
       {
@@ -38,7 +38,7 @@ $datoslol = json_decode($jsonraw , true);
       ?>
       </select><br>
 
-      <a class="submit" align="center">Subelo!</a>  
+      <button type="submit" class="submit" align="center">Subelo!</button>  
                 
     </div>
 
