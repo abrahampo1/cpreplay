@@ -21,6 +21,8 @@ if(isset($_POST["password"]) && isset($_POST["usuario"])){
     if($i == false)
     {
         $sql = "INSERT INTO `usuarios` (`id`, `user`, `pass`, `lol_user`, `main`, `seguidores`, `descripcion`) VALUES (NULL, '$usuario', '$clave_secreta', '$usuario_lol', '1', '0', 'descripcion')";
+        $do = mysqli_query($link, $sql);
+        header("location: https://replay.cpsoftware.es/login.php");
     }
 }
 
