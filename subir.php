@@ -1,4 +1,14 @@
 <?php
+session_start();
+ 
+if(!isset($_SESSION['user_id'])){
+    header('Location: login.php');
+    exit;
+} else {
+    // Show users the page!
+}
+?>
+<?php
 // En versiones de PHP anteriores a la 4.1.0, debería utilizarse $HTTP_POST_FILES en lugar
 // de $_FILES.
 function generateRandomString($length = 8) {

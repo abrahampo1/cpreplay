@@ -17,6 +17,7 @@ else{
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Light Theme</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
@@ -26,6 +27,18 @@ else{
     <img src="images/cpreplay logo.png" width="210" height="90">
 	
   </header>
+  <div class="" style="background-color: #6e6e6e; height: 55px">
+	<?php
+	  if(isset($_SESSION["user_id"]))
+	  {
+		  echo'<form action="login.php">
+	<button type="submit" class="btn"><i class="fa fa-user"></i> Log In</button>
+	</form>';
+	  }
+	  
+	  ?>
+	
+	</div>
   <div class="gallery">
     <?php
     

@@ -12,6 +12,15 @@ body {
 	margin-right: auto;
 	background-color: #282828;
 }
+.btn {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
 /* Header */
 header {
 	width: 100%;

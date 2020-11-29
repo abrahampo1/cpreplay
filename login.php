@@ -1,3 +1,19 @@
+<?php
+if(isset($_POST["name"]))
+{
+$nombre = $_POST["name"];
+$pass = $_POST["pass"];
+include("conectar.php");
+$sql = "SELECT * FROM usuarios WHERE user = '$nombre'";
+$do = mysqli_query($link, $sql);
+$result = mysqli_fetch_assoc($do);
+if(password_verify($pass, $result["pass"]))
+{
+  $_SESSION['user_id'] = $result['id'];
+  header("location: https://replay.cpsoftware.es");
+}
+}
+?>
 <html>
 
 <head>
@@ -11,12 +27,12 @@
 <body>
   <div class="main">
     <p class="sign" align="center">Log in</p>
-    <form class="form1">
-      <input class="un " type="text" align="center" placeholder="Usuario">
-      <input class="pass" type="password" align="center" placeholder="Contraseña">
-      <a class="submit" align="center">Log in</a>
+    <form class="form1" method="POST">
+      <input class="un " required name="user" type="text" align="center" placeholder="Usuario">
+      <input class="pass" required type="password" name="pass" align="center" placeholder="Contraseña">
+      <button class="submit" align="center">Log in</button>
       <p class="forgot" align="center"><a href="#">Contraseña olvidada?</p>
-      <p class="create" align="center"><a href="#">Crear cuenta</p>      
+      <p class="create" align="center"><a href="registrar.php">Crear cuenta</p>      
                 
     </div>
      
