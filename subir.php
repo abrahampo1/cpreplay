@@ -15,8 +15,8 @@
         window.onload = function(){
 
             iconSelect = new IconSelect("my-icon-select", 
-                {'selectedIconWidth':480,
-                'selectedIconHeight':480,
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
                 'selectedBoxPadding':5,
                 'iconsWidth':48,
                 'iconsHeight':48,
