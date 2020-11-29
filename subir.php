@@ -1,57 +1,19 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Icon/Image Select: Horizontal Example (Javascript)</title>
+<select class="image-picker show-html">
+  <option data-img-src="img/01.png" data-img-class="first" data-img-alt="Page 1" value="1">  Page 1  </option>
+  <option data-img-src="img/02.png" data-img-alt="Page 2" value="2">  Page 2  </option>
+  <option data-img-src="img/03.png" data-img-alt="Page 3" value="3">  Page 3  </option>
+  <option data-img-src="img/04.png" data-img-alt="Page 4" value="4">  Page 4  </option>
+  <option data-img-src="img/05.png" data-img-alt="Page 5" value="5">  Page 5  </option>
+  <option data-img-src="img/06.png" data-img-alt="Page 6" value="6">  Page 6  </option>
+  <option data-img-src="img/07.png" data-img-alt="Page 7" value="7">  Page 7  </option>
+  <option data-img-src="img/08.png" data-img-alt="Page 8" value="8">  Page 8  </option>
+  <option data-img-src="img/09.png" data-img-alt="Page 9" value="9">  Page 9  </option>
+  <option data-img-src="img/10.png" data-img-alt="Page 10" value="10"> Page 10 </option>
+  <option data-img-src="img/11.png" data-img-alt="Page 11" value="11"> Page 11 </option>
+  <option data-img-src="img/12.png" data-img-alt="Page 12" data-img-class="last" value="12"> Page 12 </option>
+</select>
+<script src="js/image-picker.js"></script>
+<script>
+$("select").imagepicker()
 
-        <link rel="stylesheet" type="text/css" href="css/lib/control/iconselect.css" >
-        <script type="text/javascript" src="js/iconselect.js"></script>
-        
-        <script type="text/javascript" src="js/iscroll.js"></script>
-        
-        <script>
-            
-        var iconSelect;
-
-        window.onload = function(){
-
-            iconSelect = new IconSelect("my-icon-select", 
-                {'selectedIconWidth':48,
-                'selectedIconHeight':48,
-                'selectedBoxPadding':1,
-                'iconsWidth':48,
-                'iconsHeight':48,
-                'boxIconSpace':1,
-                'vectoralIconNumber':2,
-                'horizontalIconNumber':6});
-
-            var icons = [];
-            icons.push({'iconFilePath':'images/icons/1.png', 'iconValue':'1'});
-            icons.push({'iconFilePath':'images/icons/2.png', 'iconValue':'2'});
-            icons.push({'iconFilePath':'images/icons/3.png', 'iconValue':'3'});
-            icons.push({'iconFilePath':'images/icons/4.png', 'iconValue':'4'});
-            icons.push({'iconFilePath':'images/icons/5.png', 'iconValue':'5'});
-            icons.push({'iconFilePath':'images/icons/6.png', 'iconValue':'6'});
-            icons.push({'iconFilePath':'images/icons/7.png', 'iconValue':'7'});
-            icons.push({'iconFilePath':'images/icons/8.png', 'iconValue':'8'});
-            icons.push({'iconFilePath':'images/icons/9.png', 'iconValue':'9'});
-            icons.push({'iconFilePath':'images/icons/10.png', 'iconValue':'10'});
-            icons.push({'iconFilePath':'images/icons/11.png', 'iconValue':'11'});
-            icons.push({'iconFilePath':'images/icons/12.png', 'iconValue':'12'});
-            icons.push({'iconFilePath':'images/icons/13.png', 'iconValue':'13'});
-            icons.push({'iconFilePath':'images/icons/14.png', 'iconValue':'14'});
-            
-            iconSelect.refresh(icons);
-
-        };
-            
-        </script>
-        
-    </head>
-    <body>
-        
-        <h2>Icon/Image Select: Horizontal Example (Javascript)</h2>
-        
-        <div id="my-icon-select"></div>
-        
-    </body>
-</html>
+</script>
