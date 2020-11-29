@@ -32,10 +32,6 @@ $datoslol = json_decode($jsonraw , true);
 		<form action="#" method="post" name="frm" class="cov-frm">
 			<!-- <label class="cov-frm-label">Sending Amount</label> -->
 			<div class="cov-inp-bx">
-				<div class="col-md-8">
-					<label class="cov-frm-labeli">Sending Amount</label>
-					<input class="cov-frm-input" type="text" value="100.00">
-				</div>
 				<div class="col-md-4">
 					<select class="selectpicker" id="select" onchange="ponerimagen()">
           <?php
@@ -59,14 +55,6 @@ foreach($datoslol as $key => $champ)
 
 
 
-
-
-</div>
-
-<div class="col-md-6 select-box" >
-
-<p> I tried several jquery based custom select with images, but none worked in responsive layouts. Finally i came accross Bootstrap-Select. After some modifications i was able to produce this code.</p>
-<p>thanks </p>
 
 
 </div>
