@@ -4,7 +4,7 @@ include("./conectar.php");
 $sql = "SELECT * FROM videos";
 if($videos = mysqli_query($link, $sql))
 {
-}
+} 
 else{
   //hacer cosas de error
 
@@ -30,7 +30,7 @@ else{
   </header>
   <div class="" style="background-color: #6e6e6e; height: 55px">
 	<?php
-	  if(isset($_SESSION["user_id"]))
+	  if(!isset($_SESSION["user_id"]))
 	  {
 		  echo'<form action="login.php">
 	<button type="submit" class="btn"><i class="fa fa-user"></i> Log In</button>
