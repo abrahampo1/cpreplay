@@ -1,34 +1,57 @@
-<div class="container">
-  <form class="form" method="post" enctype="multipart/form-data" action="subir_backend.php">
-    <div class="file-upload-wrapper" data-text="Select your file!">
-      <input name="fichero_usuario" type="file" class="file-upload-field" value="">
-    </div>
-    
-    <button type="submit">Enviar</button>
-  </form>
-</div>
-<script type="text/javascript" src="js/iconselect.js"></script>
-<script type="text/javascript" src="js/iscroll.js"></script>
-<div id="my-icon-select"></div>
-<script>
-  $("form").on("change", ".file-upload-field", function(){ 
-    $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
-});
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Icon/Image Select: Horizontal Example (Javascript)</title>
 
+        <link rel="stylesheet" type="text/css" href="css/lib/control/iconselect.css" >
+        <script type="text/javascript" src="js/iconselect.js"></script>
+        
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        
+        <script>
+            
+        var iconSelect;
 
-var iconSelect;
+        window.onload = function(){
 
-window.onload = function(){
+            iconSelect = new IconSelect("my-icon-select", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':48,
+                'iconsHeight':48,
+                'boxIconSpace':3,
+                'vectoralIconNumber':8,
+                'horizontalIconNumber':1});
 
-    iconSelect = new IconSelect("my-icon-select");
+            var icons = [];
+            icons.push({'iconFilePath':'images/icons/1.png', 'iconValue':'1'});
+            icons.push({'iconFilePath':'images/icons/2.png', 'iconValue':'2'});
+            icons.push({'iconFilePath':'images/icons/3.png', 'iconValue':'3'});
+            icons.push({'iconFilePath':'images/icons/4.png', 'iconValue':'4'});
+            icons.push({'iconFilePath':'images/icons/5.png', 'iconValue':'5'});
+            icons.push({'iconFilePath':'images/icons/6.png', 'iconValue':'6'});
+            icons.push({'iconFilePath':'images/icons/7.png', 'iconValue':'7'});
+            icons.push({'iconFilePath':'images/icons/8.png', 'iconValue':'8'});
+            icons.push({'iconFilePath':'images/icons/9.png', 'iconValue':'9'});
+            icons.push({'iconFilePath':'images/icons/10.png', 'iconValue':'10'});
+            icons.push({'iconFilePath':'images/icons/11.png', 'iconValue':'11'});
+            icons.push({'iconFilePath':'images/icons/12.png', 'iconValue':'12'});
+            icons.push({'iconFilePath':'images/icons/13.png', 'iconValue':'13'});
+            icons.push({'iconFilePath':'images/icons/14.png', 'iconValue':'14'});
+            
+            iconSelect.refresh(icons);
 
-    var icons = [];
-    icons.push({'iconFilePath':'images/icons/1.png', 'iconValue':'1'});
-    icons.push({'iconFilePath':'images/icons/2.png', 'iconValue':'2'});
-    icons.push({'iconFilePath':'images/icons/3.png', 'iconValue':'3'});
-    
-    iconSelect.refresh(icons);
-
-};
-
-</script>
+        };
+            
+        </script>
+        
+    </head>
+    <body>
+        
+        <h2>Icon/Image Select: Horizontal Example (Javascript)</h2>
+        
+        <div id="my-icon-select"></div>
+        
+    </body>
+</html>
