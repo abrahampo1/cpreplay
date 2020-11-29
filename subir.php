@@ -212,7 +212,7 @@
 				<div class="col-md-4">
 					<select class="selectpicker">
           <?php
-$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
+$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json" , true);
 while($champ = $datoslol)
 echo"hey";
 echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$champ["id"].'.png);
