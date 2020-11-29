@@ -5,6 +5,8 @@
 
   <meta charset="utf-8">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/login.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,7 +33,7 @@ $datoslol = json_decode($jsonraw , true);
       <p class="create" align="center"><a href="#">Crear cuenta</p>      
                 
     </div>
-<select class="js-example-basic-single" id="select" onchange="ponerimagen()">
+<select class="js-example-basic-single" id="id_label_single" onchange="ponerimagen()">
 <?php
 foreach($datoslol as $key => $champ)
 {
@@ -48,7 +50,7 @@ foreach($datoslol as $key => $champ)
 });
 function ponerimagen()
 {
-  var seleccion = document.getElementById("select");
+  var seleccion = document.getElementById("id_label_single");
   var imagen = document.getElementById("imagen");
   imagen.src = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/"+seleccion.value+".png";
 }
