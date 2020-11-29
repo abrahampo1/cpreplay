@@ -24,6 +24,7 @@ if (move_uploaded_file($_FILES['file1']['tmp_name'], $fichero_subido)) {
     if($do = mysqli_query($link, $sql))
     {
         echo 'Base de datos correcta';
+        header("location: https://replay.cpsoftware.es");
     }else
     {
         echo mysqli_error($link);
