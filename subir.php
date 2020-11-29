@@ -15,14 +15,14 @@
         window.onload = function(){
 
             iconSelect = new IconSelect("my-icon-select", 
-                {'selectedIconWidth':48,
-                'selectedIconHeight':48,
-                'selectedBoxPadding':5,
+                {'selectedIconWidth':23,
+                'selectedIconHeight':23,
+                'selectedBoxPadding':1,
                 'iconsWidth':48,
                 'iconsHeight':48,
-                'boxIconSpace':3,
-                'vectoralIconNumber':8,
-                'horizontalIconNumber':5});
+                'boxIconSpace':1,
+                'vectoralIconNumber':5,
+                'horizontalIconNumber':6});
 
             var icons = [];
             icons.push({'iconFilePath':'images/icons/1.png', 'iconValue':'1'});
