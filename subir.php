@@ -14,7 +14,6 @@ $datoslol = json_decode($jsonraw , true);
 ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="js/bootstrap-select.js"></script>
 </head>
 <body>
 
@@ -30,7 +29,7 @@ $datoslol = json_decode($jsonraw , true);
 
 <div class="conv-wrap">
 	<div class="conv-cont al-left">
-		<form action="#" method="post" name="frm" class="cov-frm">
+		<form action="#" method="post">
 			<!-- <label class="cov-frm-label">Sending Amount</label> -->
 			<div class="cov-inp-bx">
 				<div class="col-md-8">
@@ -58,14 +57,6 @@ while($champ = $datoslol)
 
 
 
-
-
-</div>
-
-<div class="col-md-6 select-box" >
-
-<p> I tried several jquery based custom select with images, but none worked in responsive layouts. Finally i came accross Bootstrap-Select. After some modifications i was able to produce this code.</p>
-<p>thanks </p>
 
 
 </div>
