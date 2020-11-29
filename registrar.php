@@ -12,7 +12,7 @@ if(isset($_POST["password"]) && isset($_POST["usuario"])){
     $usuario = $_POST["usuario"];
     $clave = $_POST["password"];
     $clave_secreta = password_hash($clave, PASSWORD_DEFAULT);
-    $sql = "SELECT * FROM usuarios WHERE user = $usuario";
+    $sql = "SELECT * FROM usuarios WHERE user = '$usuario'";
     $do = mysqli_query($link, $sql);
     $i = false;
     while($result = mysqli_fetch_assoc($do)){
