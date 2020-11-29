@@ -5,6 +5,7 @@ if(!isset($_SESSION['user_id'])){
     header('Location: login.php');
     exit;
 } else {
+  echo $_SESSION["user_id"];
     // Show users the page!
 }
 ?>
