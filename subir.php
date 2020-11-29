@@ -24,10 +24,12 @@ $datoslol = json_decode($jsonraw , true);
     <p>&nbsp;</p>
 	  <div class="holder_form form-group">
 	   <form>
+		   <label>Vídeo</label>
+	 <input type="file" id="file1" name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
 		<label>Titulo</label>
       <input type="text" class="usuario form-control" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
 		   <label>Descripción</label>
-      <textarea class="pass form-control" type="text" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3"></textarea>
+      <textarea class="pass form-control" type="text" align="center" placeholder="Chiquita stompeada que acabo d pegar lmao" style="margin-bottom: 10px" rows="3" ></textarea>
 		   <label>Champion</label>
       <select class="un js-example-basic-single form-control" align="center" id="id_label_single" onchange="ponerimagen()" style="margin-bottom: 10px">
       <?php
@@ -42,9 +44,8 @@ $datoslol = json_decode($jsonraw , true);
 <img id="imagen" class="imagen" width="40" height="40" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/-1.png" style="margin-top: 10px;" alt=""><br><br>
 
       <button type="submit" class="submit form-control" align="center">Subelo!</button>  
-                
+   <progress id="progressBar" class="bar" value="0" max="100" style="width:370px;">
 	  </div>
-   
     </div>
 
 </form>
@@ -58,7 +59,26 @@ function ponerimagen()
   var imagen = document.getElementById("imagen");
   imagen.src = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/"+seleccion.value+".png";
 }
+function _(el) {
+  return document.getElementById(el);
+}
+$(function() {
 
+    var bar = $('.bar');
+
+    $('form').ajaxForm({
+        beforeSend: function() {
+            var percentVal = '0%';
+            bar.width(percentVal);
+        },
+        uploadProgress: function(event, position, total, percentComplete) {
+            var percentVal = percentComplete + '%';
+            bar.width(percentVal);
+        },
+        complete: function(xhr) {
+        }
+    });
+}); 
 </script>
 
 </body>
