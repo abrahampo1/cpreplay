@@ -9,7 +9,8 @@
     <button type="submit">Enviar</button>
   </form>
 </div>
-
+<script type="text/javascript" src="js/iconselect.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
 <script>
   $("form").on("change", ".file-upload-field", function(){ 
     $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
