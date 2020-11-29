@@ -1,3 +1,29 @@
+<?php
+include("conectar.php");
+$usuario = "";
+$usuario_lol="";
+$clave="";
+if(isset($_POST["usuario"]))
+{
+    $usuario = $_POST["usuario"];
+}
+if(isset($_POST["usuario_lol"]))
+{
+    $usuario_lol = $_POST["usuario_lol"];
+}
+if(isset($_POST["password"]))
+{
+    $clave = $_POST["password"];
+}
+$clave_secreta = password_hash($clave, PASSWORD_DEFAULT);
+$sql = "SELECT * FROM usuarios WHERE user = $usuario";
+$do = mysqli_query($link, $sql);
+$check = mysqli_fetch_assoc($do);
+if(count($check) == 0)
+{
+    $sql = "INSERT INTO `usuarios` (`id`, `user`, `pass`, `lol_user`, `main`, `seguidores`, `descripcion`) VALUES (NULL, '$usuario', '$clave_secreta', '$usuario_lol', '1', '0', 'descripcion')";
+}
+?>
 <html>
 
 <head>
@@ -11,10 +37,10 @@
 <body>
   <div class="main">
     <p class="sign" align="center">Registro</p>
-    <form class="form1" method="post" >
-      <input class="un " type="text" align="center" placeholder="Usuario">
-      <input class="un " type="text" align="center" placeholder="Usuario de League of Legends">
-      <input class="pass" type="password" align="center" placeholder="Contraseña">
+    <form class="form1" method="post">
+      <input class="un " required name="usuario" type="text" align="center" placeholder="Usuario">
+      <input class="un " name="usuario_lol" type="text" align="center" placeholder="Usuario de League of Legends">
+      <input class="pass" required name="password"  type="password" align="center" placeholder="Contraseña">
       <a class="submit" align="center">Registrarse</a>    
                 
     </div>
