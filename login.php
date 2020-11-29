@@ -9,6 +9,7 @@ $do = mysqli_query($link, $sql);
 $result = mysqli_fetch_assoc($do);
 if(password_verify($pass, $result["pass"]))
 {
+  session_start();
   $_SESSION['user_id'] = $result['id'];
   header("location: https://replay.cpsoftware.es");
 }

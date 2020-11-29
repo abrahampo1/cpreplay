@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("./conectar.php");
 $sql = "SELECT * FROM videos";
 if($videos = mysqli_query($link, $sql))
