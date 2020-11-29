@@ -20,7 +20,7 @@ function generateRandomString($length = 8) {
     }
     return $randomString;
 }
-if(isset($_POST["file1"])){
+if(isset($_POST["titulo"])){
 $nombre_random = generateRandomString();
 include("conectar.php");
 
