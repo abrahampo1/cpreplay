@@ -24,10 +24,6 @@ if(isset($_POST["titulo"])){
 $nombre_random = generateRandomString();
 include("conectar.php");
 $id = $_SESSION["user_id"];
-$sql = "SELECT * FROM usuarios WHERE id = '$id'";
-$do = mysqli_query($link, $sql);
-$user = mysqli_fetch_assoc($do);
-$usuario = $user["user"];
 
 $dir_subida = '/opt/lampp/htdocs/cproyects/cpreplay/video/';
 $fichero_subido = $dir_subida . $nombre_random . ".mp4";
@@ -39,7 +35,7 @@ if (move_uploaded_file($_FILES['file1']['tmp_name'], $fichero_subido)) {
     $titulo = $_POST['titulo'];
 $desc = $_POST['desc'];
 $champ = $_POST['champ'];
-    $sql = "INSERT INTO `videos` (`id`, `video`, `titulo`, `descripcion`, `campeon`, `autor`, `likes`, `visitas`) VALUES (NULL, '$nombre_random', '$titulo', '$desc', '$champ', '$usuario', '0', '0')";
+    $sql = "INSERT INTO `videos` (`id`, `video`, `titulo`, `descripcion`, `campeon`, `autor`, `likes`, `visitas`) VALUES (NULL, '$nombre_random', '$titulo', '$desc', '$champ', '$id', '0', '0')";
     if($do = mysqli_query($link, $sql))
     {
         echo 'Base de datos correcta';
