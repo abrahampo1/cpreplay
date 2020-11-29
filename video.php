@@ -1,7 +1,7 @@
 <?php
 include("./conectar.php");
-$video = $_GET["v"];
-$sql = "SELECT * FROM videos WHERE video = '$video'";
+$video_id = $_GET["v"];
+$sql = "SELECT * FROM videos WHERE video = '$video_id'";
 if($videos = mysqli_query($link, $sql))
 {
 	$video = mysqli_fetch_assoc($videos);
@@ -34,7 +34,7 @@ else{
 	
   </header>
   <div class="gallery center">
-	  <video class="thumbnail" src="video/test.mp4" autoplay controls></video>
+	  <video class="thumbnail" src="video/<?php echo $video_id ?>.mp4" autoplay controls></video>
 	  <br>
   </div>
  <div style="display: flex;
