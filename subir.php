@@ -183,7 +183,10 @@
 
 
   </style>
-
+<?php
+$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json" , true);
+print_r($datoslol);
+?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.js"></script>
@@ -212,8 +215,6 @@
 				<div class="col-md-4">
 					<select class="selectpicker">
           <?php
-$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json" , true);
-print_r($datoslol);
 while($champ = $datoslol)
 {
   echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/'.$champ["id"].'.png);
