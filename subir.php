@@ -36,7 +36,7 @@ $datoslol = json_decode($jsonraw , true);
 			<!-- <label class="cov-frm-label">Sending Amount</label> -->
 			<div class="cov-inp-bx">
 				<div class="col-md-4">
-					<select class="selectpicker" id="select" onchange="ponerimagen()">
+					<select class="selectpicker" id="select-state" onchange="ponerimagen()">
           <?php
 foreach($datoslol as $key => $champ)
 {
@@ -67,7 +67,7 @@ foreach($datoslol as $key => $champ)
 <script>
 function ponerimagen()
 {
-  var seleccion = document.getElementById("select");
+  var seleccion = document.getElementById("select-state");
   var imagen = document.getElementById("imagen");
   imagen.src = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/"+seleccion.value+".png";
 }
