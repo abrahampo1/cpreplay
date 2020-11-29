@@ -14,9 +14,8 @@ $datoslol = json_decode($jsonraw , true);
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
-
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </head>
 <body>
 
@@ -36,7 +35,7 @@ $datoslol = json_decode($jsonraw , true);
 			<!-- <label class="cov-frm-label">Sending Amount</label> -->
 			<div class="cov-inp-bx">
 				<div class="col-md-4">
-					<select class="selectpicker" id="select-state" onchange="ponerimagen()">
+					<select class="js-example-basic-single js-states form-control" id="id_label_single" onchange="ponerimagen()">
           <?php
 foreach($datoslol as $key => $champ)
 {
@@ -67,7 +66,7 @@ foreach($datoslol as $key => $champ)
 <script>
 function ponerimagen()
 {
-  var seleccion = document.getElementById("select-state");
+  var seleccion = document.getElementById("id_label_single");
   var imagen = document.getElementById("imagen");
   imagen.src = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/"+seleccion.value+".png";
 }
