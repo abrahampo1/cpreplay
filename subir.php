@@ -23,7 +23,7 @@ $datoslol = json_decode($jsonraw , true);
   <div class="main">
     <p>&nbsp;</p>
 	  <div class="holder_form form-group">
-	   <form method="post" enctype="multipart/form-data" action="subir_backend.php">
+	   <form method="POST" action="subir_backend.php">
 		   <label>Vídeo</label>
 	 <input type="file" id="file1" required name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
 		<label>Titulo</label>
