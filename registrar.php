@@ -12,12 +12,9 @@
   <div class="main">
     <p class="sign" align="center">Log in</p>
     <form class="form1">
-      <label>Usuario</label>
-      <input class="un " type="text" align="center" placeholder="Juan...">
-      <label>Usuario de League Of Legends</label>
-      <input class="un " type="text" align="center" placeholder="pussydestroyer69...">
-      <label>Contraseña</label>
-      <input class="pass" type="password" align="center" placeholder="Contraseña123">
+      <input class="un " type="text" align="center" placeholder="Usuario">
+      <input class="un " type="text" align="center" placeholder="Usuario de League of Legends">
+      <input class="pass" type="password" align="center" placeholder="Contraseña">
       <a class="submit" align="center">Registrarse</a>    
                 
     </div>
