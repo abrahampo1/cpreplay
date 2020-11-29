@@ -14,7 +14,7 @@ if(isset($_POST["password"]) && isset($_POST["usuario"])){
     $clave_secreta = password_hash($clave, PASSWORD_DEFAULT);
     $sql = "SELECT * FROM usuarios WHERE user = $usuario";
     $do = mysqli_query($link, $sql);
-    if(mysqli_num_rows($do) == 0)
+    if(!($do->num_rows)>0)
     {
         $sql = "INSERT INTO `usuarios` (`id`, `user`, `pass`, `lol_user`, `main`, `seguidores`, `descripcion`) VALUES (NULL, '$usuario', '$clave_secreta', '$usuario_lol', '1', '0', 'descripcion')";
     }
