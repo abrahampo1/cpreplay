@@ -28,20 +28,19 @@ $datoslol = json_decode($jsonraw , true);
     <form class="form1">
       <input class="un " type="text" align="center" placeholder="Usuario">
       <input class="pass" type="password" align="center" placeholder="Contraseña">
-      <a class="submit" align="center">Log in</a>
-      <p class="forgot" align="center"><a href="#">Contraseña olvidada?</p>
-      <p class="create" align="center"><a href="#">Crear cuenta</p>      
+      <select class="js-example-basic-single" id="id_label_single" onchange="ponerimagen()">
+      <?php
+      foreach($datoslol as $key => $champ)
+      {
+        echo '<option value="'.$champ["id"].'" >'.$champ["name"].'</option>';
+      }
+
+      ?>
+      </select>
+      <a class="submit" align="center">Subelo!</a>  
                 
     </div>
-<select class="js-example-basic-single" id="id_label_single" onchange="ponerimagen()">
-<?php
-foreach($datoslol as $key => $champ)
-{
-  echo '<option value="'.$champ["id"].'" >'.$champ["name"].'</option>';
-}
 
-?>
-</select>
 <img id="imagen" src="" alt="">
 
 <script>
