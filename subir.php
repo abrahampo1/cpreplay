@@ -20,7 +20,7 @@ function generateRandomString($length = 8) {
     }
     return $randomString;
 }
-
+if(isset($_POST["file1"])){
 $nombre_random = generateRandomString();
 include("conectar.php");
 
@@ -49,10 +49,9 @@ $champ = $_POST['champ'];
 }
 
 echo 'Más información de depuración:';
-print_r($_FILES);
 
 print "</pre>";
-
+}
 ?>
 <!DOCTYPE html>
 <html>
