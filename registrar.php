@@ -39,7 +39,7 @@ if(isset($_POST["password"]) && isset($_POST["usuario"])){
       <input class="un " required name="usuario" type="text" align="center" placeholder="Usuario">
       <input class="un " name="usuario_lol" type="text" align="center" placeholder="Usuario de League of Legends">
       <input class="pass" required name="password"  type="password" align="center" placeholder="Contraseña">
-      <a class="submit" align="center">Registrarse</a>    
+      <button type="submit" class="submit" align="center">Registrarse</button>    
                 
     </div>
      
