@@ -31,7 +31,7 @@ $datoslol = json_decode($jsonraw , true);
       <p class="create" align="center"><a href="#">Crear cuenta</p>      
                 
     </div>
-<select class="js-example-basic-single" id="id_label_single" onchange="ponerimagen()">
+<select class="js-example-basic-single" id="select" onchange="ponerimagen()">
 <?php
 foreach($datoslol as $key => $champ)
 {
@@ -50,7 +50,7 @@ foreach($datoslol as $key => $champ)
 });
 function ponerimagen()
 {
-  var seleccion = document.getElementById("id_label_single");
+  var seleccion = document.getElementById("select");
   var imagen = document.getElementById("imagen");
   imagen.src = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/"+seleccion.value+".png";
 }
