@@ -1,7 +1,7 @@
 <?php
-if(isset($_POST["name"]))
+if(isset($_POST["user"]))
 {
-$nombre = $_POST["name"];
+$nombre = $_POST["user"];
 $pass = $_POST["pass"];
 include("conectar.php");
 $sql = "SELECT * FROM usuarios WHERE user = '$nombre'";
