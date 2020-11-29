@@ -11,8 +11,8 @@ function generateRandomString($length = 8) {
     return $randomString;
 }
 $titulo = $_POST['titulo'];
-$desc = $_POST["desc"];
-$champ = $_POST["champ"];
+$desc = $_POST['desc'];
+$champ = $_POST['champ'];
 $nombre_random = generateRandomString();
 include("conectar.php");
 
