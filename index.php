@@ -56,7 +56,6 @@ else{
       echo'<div class="thumbnail"> <a href="https://replay.cpsoftware.es/video.php?v='.$video["video"].'"><video src="https://replay.cpsoftware.es/video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video></a>
       <h4>'.$video["titulo"].'</h4>
       <p class="tag">'.$user["user"].'</p>
-      <p class="text_column">'.$video["descripcion"].'</p>
     </div>';
     }
     
