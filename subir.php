@@ -22,7 +22,7 @@
                 'iconsHeight':48,
                 'boxIconSpace':3,
                 'vectoralIconNumber':8,
-                'horizontalIconNumber':1});
+                'horizontalIconNumber':5});
 
             var icons = [];
             icons.push({'iconFilePath':'images/icons/1.png', 'iconValue':'1'});
