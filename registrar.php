@@ -10,8 +10,8 @@
 
 <body>
   <div class="main">
-    <p class="sign" align="center">Log in</p>
-    <form class="form1">
+    <p class="sign" align="center">Registro</p>
+    <form class="form1" method="post" >
       <input class="un " type="text" align="center" placeholder="Usuario">
       <input class="un " type="text" align="center" placeholder="Usuario de League of Legends">
       <input class="pass" type="password" align="center" placeholder="Contraseña">
