@@ -213,13 +213,11 @@ $datoslol = json_decode($jsonraw , true);
 					<input class="cov-frm-input" type="text" value="100.00">
 				</div>
 				<div class="col-md-4">
-					<select class="selectpicker">
+					<select class="">
           <?php
 while($champ = $datoslol)
 {
-  echo '<option value="'.$champ["id"].'");
-  width:45px;
-  height:45px;" >'.$champ["name"].'</option>';
+  echo '<option value="'.$champ["id"].'")" >'.$champ["name"].'</option>';
 }
 
 ?>
