@@ -14,42 +14,6 @@
 		  
 		}
 
-
-	.pkr {
-		background-image:url(cur/pk.png);
-		width:45px;
-		height:23px;
-		}
-		
-	.gbp {
-		background-image:url(cur/uk.png);
-		width:45px;
-		height:23px;
-		}
-
-	.usd {
-		background-image:url(cur/mus.png);
-		width:45px;
-		height:23px;
-		}
-
-	.euro {
-		background-image:url(cur/eu.png);
-		width:45px;
-		height:23px;
-		}
-
-	.aud {
-		background-image:url(cur/aus.png);
-		width:45px;
-		height:23px;
-		}
-	.afg {
-		background-image:url(cur/afg.png);
-		width:45px;
-		height:23px;
-		}
-
 		
 	
 	.bootstrap-select > .dropdown-toggle {
@@ -225,14 +189,6 @@
   <script src="js/bootstrap-select.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Responsive Bootstrap-select with images - Aslam Parvaiz (aslamswt@gmail.com)</a>
-	  <a href="https://silviomoreto.github.io/bootstrap-select/">Based on - https://silviomoreto.github.io/bootstrap-select/</a>
-    </div>
-  </div>
-</nav>
 
 <div class="container">
 
@@ -255,33 +211,15 @@
 				</div>
 				<div class="col-md-4">
 					<select class="selectpicker">
-						<option value="pkr" data-icon="pkr" >PKR</option>
-						<option value="uk" data-icon="gbp" >GBP</option>
-						<option value="usd" data-icon="usd" >USD</option>
-						<option value="eu" data-icon="euro" >EURO</option>
-						<option value="aud" data-icon="aud" >AUD</option>
-						<option value="afg" data-icon="afg" >AFG</option>
-						</select>
-				</div>
-			</div>
-
-			<!--  <label class="cov-frm-label">Receving Amount</label> -->
-			<div class="cov-inp-bx">
-				<div class="col-md-8">
-					<label class="cov-frm-labeli">Receving Amount</label>
-					<input class="cov-frm-input" name="" type="text" value="100.00">
-				</div>
-				<div class="col-md-4">
-					<select class="selectpicker" style="width:100%;">
-						<option value="uk" data-icon="gbp" >GBP</option>
-						<option value="pkr" data-icon="pkr" >PKR</option>
+          <?php
+$datoslol = json_decode("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
+while($champ = $datoslol)
+echo '<option value="'.$champ["id"].'" style="background-image:url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons//'.$champ["id"].'.png);
+width:45px;
+height:23px;" >'.$cahmp["name"].'</option>';
+?>
 						
-						<option value="usd" data-icon="usd" >USD</option>
-						<option value="eu" data-icon="euro" >EURO</option>
-						<option value="aud" data-icon="aud" >AUD</option>
-						<option value="afg" data-icon="afg" >AFG</option>
-                                          
-					</select>
+						</select>
 				</div>
 			</div>
 
