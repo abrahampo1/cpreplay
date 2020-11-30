@@ -36,8 +36,15 @@ else{
 	<button type="submit" class="btn"><i class="fa fa-user"></i> Log In</button>
 	</form>';
 	  }else{
-		  echo'<form action="subir.php">
-	<button type="submit" class="btn"><i class="fa fa-upload"></i>Subir Video</button>
+      $id_sesion = $_SESSION["user_id"];
+      $sql = "SELECT * FROM usuarios WHERE user = '$id_sesion'";
+      $do = mysqli_query($link, $sql);
+      $user = mysqli_fetch_assoc($do);
+      echo'<form action="perfil.php">
+      <button type="submit" class="btn"><i class="fa fa-user"></i>'.$user["user"].'</button>
+      </form>
+      <form action="subir.php">
+	<button type="submit" class="btn"><i class="fa fa-upload"></i> Subir Video</button>
 	</form>';
 	  }
 	  
