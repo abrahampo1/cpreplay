@@ -39,14 +39,14 @@ else{
     <img src="images/cpreplay logo.png" width="210" height="90">
   </header>
   <!-- Hero Section -->
-  <section class="intro">
+  <div class="intro" style="width: 100%;">
     <div class="column">
       <h3><?php echo $user_data["user"]; ?></h3>
     </div>
     <div class="column">
       <p>DESCRIPCION</p>
     </div>
-  </section>
+</div>
   <!-- Stats Gallery Section -->
   <div class="gallery">
     <?php
