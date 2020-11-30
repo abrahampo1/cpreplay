@@ -45,7 +45,7 @@ else{
       <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png" width="200" height="200">
     </div>
     <div class="column">
-      <p>DESCRIPCION</p>
+      <p><?php echo $user_data["descripcion"]; ?></p>
     </div>
 </div>
   <!-- Stats Gallery Section -->
