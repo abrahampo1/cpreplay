@@ -52,11 +52,15 @@ $champion_user = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game
 	margin-right: 1%;">
 	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
 	  <span style="font-size: 50px;  margin-left: 20px;"><?php echo $titulo ?></span>
-	  <br>
-	  <img style="vertical-align; border-radius: 100%" src="<?php echo $champion_user ?>" width="40px" height="40px">
-	  <span style="font-size: 20px;  margin-left: 20px;"><?php echo $user_data["user"]; ?></span>
+	  
+	
 	  
  </div>
+ <div style="display: flex;
+  align-items: center;
+	margin-left: 1%;
+	margin-right: 1%;">  <img style="vertical-align; border-radius: 100%" src="<?php echo $champion_user ?>" width="40px" height="40px">
+	  <span style="font-size: 20px;  margin-left: 20px;"><?php echo $user_data["user"]; ?></span></div>
     <div style="
 	background-color:darkgrey;
 	border-radius: 5px;
