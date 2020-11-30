@@ -41,7 +41,7 @@ else{
   <!-- Hero Section -->
   <section class="intro">
     <div class="column">
-      <h3><?php echo $user["user"]; ?></h3>
+      <h3><?php echo $user_data["user"]; ?></h3>
       <img src="css/images/profile.png" alt="" class="profile"> </div>
     <div class="column">
       <p>DESCRIPCION</p>
