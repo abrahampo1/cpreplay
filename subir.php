@@ -21,13 +21,16 @@ function generateRandomString($length = 8) {
     return $randomString;
 }
 if(isset($_POST["titulo"])){
-$nombre_random = generateRandomString();
+
 include("conectar.php");
 $id = $_SESSION["user_id"];
 
 $dir_subida = '/opt/lampp/htdocs/cproyects/cpreplay/video/';
+while(file_exists($dir_subida . $nombre_random . ".mp4"))
+{
+  $nombre_random = generateRandomString();
+}
 $fichero_subido = $dir_subida . $nombre_random . ".mp4";
-
 echo '<pre>';
 
 if (move_uploaded_file($_FILES['file1']['tmp_name'], $fichero_subido)) {
