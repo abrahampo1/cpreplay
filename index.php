@@ -28,7 +28,7 @@ else{
     <img src="images/cpreplay logo.png" width="210" height="90">
 	
   </header>
-  <div class="flex" style="background-color: #6e6e6e; height: 55px">
+  <div class="" style="background-color: #6e6e6e; height: 55px; display:flex">
 	<?php
 	  if(!isset($_SESSION["user_id"]))
 	  {
