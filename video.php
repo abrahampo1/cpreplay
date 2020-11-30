@@ -61,6 +61,7 @@ $champion_user = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game
 	margin-left: 1%;
 	margin-right: 1%;">  <img style="vertical-align; border-radius: 100%" src="<?php echo $champion_user ?>" width="40px" height="40px">
 	  <span style="font-size: 20px;  margin-left: 20px;"><?php echo $user_data["user"]; ?></span></div>
+	  <br>
     <div style="
 	background-color:darkgrey;
 	border-radius: 5px;
