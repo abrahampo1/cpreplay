@@ -27,7 +27,7 @@ $id = $_SESSION["user_id"];
 
 $nombre_random = generateRandomString();
 $dir_subida = '/opt/lampp/htdocs/cproyects/cpreplay/video/';
-while(file_exists($dir_subida . $nombre_random . ".mp4"))
+while(file_exists($dir_subida . $nombre_random . ".mp4" == true))
 {
   $nombre_random = generateRandomString();
 }
