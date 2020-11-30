@@ -37,7 +37,7 @@ else{
 	</form>';
 	  }else{
       $id_sesion = $_SESSION["user_id"];
-      $sql = "SELECT * FROM usuarios WHERE user = '$id_sesion'";
+      $sql = "SELECT * FROM usuarios WHERE id = '$id_sesion'";
       $do = mysqli_query($link, $sql);
       $user = mysqli_fetch_assoc($do);
       echo'<form action="perfil.php">
