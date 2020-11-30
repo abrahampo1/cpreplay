@@ -51,6 +51,8 @@ else{
 	border-radius: 5px;
 	margin: 20px">
 	<br>
+	<h4>Descripcion</h4>
+	<br>
 	  <h3 style="margin: 20px;"><?php echo $descripcion ?></h3>
 	<br>
 	</div>
