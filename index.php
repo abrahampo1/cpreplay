@@ -28,7 +28,7 @@ else{
     <img src="images/cpreplay logo.png" width="210" height="90">
 	
   </header>
-  <div class="" style="background-color: #6e6e6e; height: 55px">
+  <div class="flex" style="background-color: #6e6e6e; height: 55px">
 	<?php
 	  if(!isset($_SESSION["user_id"]))
 	  {
@@ -40,12 +40,13 @@ else{
       $sql = "SELECT * FROM usuarios WHERE id = '$id_sesion'";
       $do = mysqli_query($link, $sql);
       $user = mysqli_fetch_assoc($do);
-      echo'<form action="perfil.php">
-      <button type="submit" class="btn"><i class="fa fa-user"></i>'.$user["user"].'</button>
+      echo'
+      <form action="perfil.php">
+      <button type="submit" class="btn"><i class="fa fa-user"></i> '.$user["user"].'</button>
       </form>
       <form action="subir.php">
 	<button type="submit" class="btn"><i class="fa fa-upload"></i> Subir Video</button>
-	</form>';
+	    </form>';
 	  }
 	  
 	  ?>
