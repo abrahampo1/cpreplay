@@ -41,7 +41,8 @@ else{
       $do = mysqli_query($link, $sql);
       $user = mysqli_fetch_assoc($do);
       echo'
-      <form action="perfil.php">
+      <form method="get" action="profilel.php">
+      <input type="hidden" name="u" value="'.$user["id"].'">
       <button type="submit" class="btn"><i class="fa fa-user"></i> '.$user["user"].'</button>
       </form>
       <form action="subir.php">
