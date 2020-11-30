@@ -19,10 +19,7 @@ else{
   //hacer cosas de error
 
 }
-$id = $video["autor"];
-      $sql = "SELECT * FROM usuarios WHERE id = '$id'";
-      $do = mysqli_query($link, $sql);
-      $user = mysqli_fetch_assoc($do);
+
 ?>
 
 <!doctype html>
@@ -44,7 +41,7 @@ $id = $video["autor"];
   <!-- Hero Section -->
   <section class="intro">
     <div class="column">
-      <h3><?php echo $user["user"]; ?></h3>
+      <h3><?php echo $user_data["user"]; ?></h3>
       <img src="css/images/profile.png" alt="" class="profile"> </div>
     <div class="column">
       <p>DESCRIPCION</p>
@@ -56,7 +53,10 @@ $id = $video["autor"];
     
     while($video = mysqli_fetch_assoc($videos))
     {
-      
+      $id = $video["autor"];
+      $sql = "SELECT * FROM usuarios WHERE id = '$id'";
+      $do = mysqli_query($link, $sql);
+      $user = mysqli_fetch_assoc($do);
       echo'<div class="thumbnail"> <a href="https://replay.cpsoftware.es/video.php?v='.$video["video"].'"><video src="https://replay.cpsoftware.es/video/'.$video["video"].'.mp4" alt="" height="400" width="2000" class="cards"></video></a>
       <h4>'.$video["titulo"].'</h4>
       <p class="tag">'.$user["user"].'</p>
