@@ -2,7 +2,7 @@
 $usuario = $_GET["u"];
 session_start();
 include("./conectar.php");
-$sql = "SELECT * FROM videos";
+$sql = "SELECT * FROM videos WHERE autor = '$usuario'";
 if($videos = mysqli_query($link, $sql))
 {
 } 
