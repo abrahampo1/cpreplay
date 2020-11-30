@@ -42,6 +42,7 @@ else{
   <div class="intro" style="width: 100%;">
     <div class="column">
       <h3><?php echo $user_data["user"]; ?></h3>
+      <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png" width="200" height="200">
     </div>
     <div class="column">
       <p>DESCRIPCION</p>
