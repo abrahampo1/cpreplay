@@ -81,7 +81,7 @@ $datoslol = json_decode($jsonraw , true);
 	  <div class="holder_form form-group">
 	   <form method="POST" enctype="multipart/form-data">
 		   <label>Vídeo</label>
-	 <input type="file" id="file1" required name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
+	 <input type="file" id="file1" accept="video/*" required name="file1" class="form-control" style="margin-bottom: 10px" onchange="uploadFile()">
 		<label>Titulo</label>
       <input type="text" required class="usuario form-control" name="titulo" id="titulo" placeholder="200 de farm con Soraka top (de 10 años)" align="center">
 		   <label>Descripción</label>
