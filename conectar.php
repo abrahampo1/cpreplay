@@ -3,7 +3,7 @@
 $servername = "localhost";
 $database = "cpreplay";
 $username = "root";
-$password = "abraham.leiro1";
+$password = "";
 // Create connection
 $link = mysqli_connect($servername, $username, $password, $database);
 // Check connection
