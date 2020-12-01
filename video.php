@@ -8,12 +8,20 @@ if($videos = mysqli_query($link, $sql))
 	$video = mysqli_fetch_assoc($videos);
 	$titulo = $video["titulo"];
 	$descripcion = $video["descripcion"];
+	$autor = $video["autor"];
 	$champion = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/".$video["campeon"].".png";
 }
 else{
   //hacer cosas de error
 
 }
+$sql = "SELECT * FROM usuarios WHERE id = '$autor'";
+if($do = mysqli_query($link, $sql))
+{
+ $user_data = mysqli_fetch_assoc($do);
+} 
+else{}
+$champion_user = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/".$user_data["main"].".png";
 ?>
 
 
@@ -44,8 +52,16 @@ else{
 	margin-right: 1%;">
 	<img style="vertical-align; border-radius: 100%" src="<?php echo $champion ?>" width="80px" height="80px">
 	  <span style="font-size: 50px;  margin-left: 20px;"><?php echo $titulo ?></span>
-	  
- </div>
+ </div><br>
+ <div style="display: flex;
+  align-items: center;
+	margin-left: 1%;
+	margin-right: 1%;"> 
+	  <a href="profile.php?u=<?php echo $user_data["id"]; ?>">
+	  <img style="vertical-align; border-radius: 100%" src="<?php echo $champion_user ?>" width="40px" height="40px"></a>
+	  <span style="font-size: 20px;  margin-left: 20px;"><?php echo $user_data["user"]; ?></span>
+	  </div>
+	  <br>
     <div style="
 	background-color:darkgrey;
 	border-radius: 5px;
