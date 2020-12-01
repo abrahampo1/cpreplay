@@ -38,7 +38,7 @@ $champion_user = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game
 <div class="container"> 
   <header class="header">
 	  <a href="https://replay.cpsoftware.es">
-	  <img src="images/cpreplay logo.png" width="210" height="90">
+	  <img src="https://i.imgur.com/NNZSwft.png" width="210" height="90">
 	  </a>
 	
   </header>
