@@ -43,17 +43,22 @@ else{
   <!-- Hero Section -->
   <div class="intro" style="width: 100%;">
     <div class="column">
-      <select>
+      
       <?php
-      $jsonraw = file_get_contents("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
-      $datoslol = json_decode($jsonraw , true);
-      foreach($datoslol as $key => $champ)
-      {
-        echo '<option value="'.$champ["id"].'" >'.$champ["name"].'</option>';
+      if($_SESSION["user_id"]==$usuario){
+        echo '<form method="post"><h2>Main</h2><select>';
+        $jsonraw = file_get_contents("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json");
+        $datoslol = json_decode($jsonraw , true);
+        foreach($datoslol as $key => $champ)
+        {
+          echo '<option value="'.$champ["id"].'" >'.$champ["name"].'</option>';
+        }
+        echo'</select>
+        <button type="submit">Guardar</button></form>';
       }
-
+      
       ?>
-      </select>
+      
       <h3><?php echo $user_data["user"]; ?></h3>
       <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png" width="200" height="200">
     </div>
