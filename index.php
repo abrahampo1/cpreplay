@@ -28,7 +28,7 @@ else{
     <img src="https://i.imgur.com/t2iQvlc.png" width="210" height="90">
 	
   </header>
-  <div class="" style="background-color: #6e6e6e; height: 55px; display:flex">
+  <div class="" style="background-color: #282828; height: 55px; display:flex">
 	<?php
 	  if(!isset($_SESSION["user_id"]))
 	  {
