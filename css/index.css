@@ -80,6 +80,8 @@ header {
 	margin-right: 1%;
 	border-radius: 3px;
 	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-bottom: 4px solid #A3A3A3;
 }
 .gallery .thumbnail h4 {
