@@ -70,8 +70,6 @@ $champion_user = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game
 	  <h3 style="margin: 20px;"><?php echo $descripcion ?></h3>
 	<br>
 	</div>
-	
-  <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
 </div>
 </body>
 </html>

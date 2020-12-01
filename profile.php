@@ -84,9 +84,6 @@ $user = mysqli_fetch_assoc($do);
     
     ?>
   </div>
-  <!-- Footer Section -->
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
 </div>
 <!-- Main Container Ends -->
 </body>

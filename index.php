@@ -70,7 +70,7 @@ else{
     
     ?>
   </div>
-  <div class="copyright">&copy;2019 - <strong>CPSOFTWARE</strong></div>
+
 </div>
 </body>
 </html>
